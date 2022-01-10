@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO - Agregar o Editar Productos</title>
+    <link rel="stylesheet" href="/css/stylesIndex.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/StylesAddproduct.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/003cc75b52.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!------------------------------HEADER-------------------------------->
+    <%- include('./partials/header')%> 
+
+
+    <h1 class="titulo">Agregar Productos</h1>
+
+    <!--------------------------------FORM---------------------------------->
+
+    <div class="contenedor-form">        
+        <form class="product-form" action="/products/productAdd" method="POST" enctype="multipart/form-data">
+
+<!----------------------NOMBRE ALBUM-------------------------->
+
+            <div class="controlador-form">
+                <label for="name">Nombre del Producto</label>
+                <input class="input-style" type="text" name="name" id="name" required>
+            </div>
+
+<!----------------------NOMBRE ARTISTA-------------------------->
+
+            <div class="controlador-form">
+                <label for="artist">Nombre del Artista</label>
+                <input class="input-style" type="text" name="artist" id=artist" required>
+            </div>
+
+<!----------------------GENERO ALBUM-------------------------->
+
+            <div class="controlador-form">
+                <label for="genre">Género</label>
+                <select class="input-style-category" name="genre" id="genre" required> 
+                    <option name="rock" value="rock">Rock</option>
+                    <option name="pop" value="pop">Pop</option>
+                    <option name="hip-hop" value="hip-hop">Hip-Hop</option>
+                    <option name="ryb" value="ryb">R&B</option>
+                    <option name="clasica" value="clasica">Clásica</option>
+                    <option name="kpop" value="kpop">K-Pop</option>
+                    <option name="metal" value="metal">Metal</option>
+                    <option name="punk" value="punk">Punk</option>
+                    <option name="alternativo" value="alternativo">Alternativo</option>
+                    <option name="jazz" value="jazz">Jazz</option>
+                    <option name="funk"  value="funk">Funk</option>
+                    <option name="soul" value="soul">Soul</option>
+                    <option name="folk" value="folk">Folk</option>
+                </select>
+            </div>
+
+<!----------------------DESCRIPCION-------------------------->
+
+            <div class="controlador-form">
+                <label for="description">Descripción del Producto</label>
+                <textarea class="text-area" name="description" id="description" cols="30" rows="10" required></textarea>
+            </div>
+
+<!----------------------CATEGORIA-------------------------->
+
+            <div class="controlador-form">
+                <label for="category">Categoría</label>
+                <select class="input-style-type" name=category" id=category" required> 
+                    <option name="cd" value="cd">CD</option>
+                    <option name="vinilo" value="vinilo">Vinilo</option>
+                    <option name="especial" value="especial">Articulo especial</option>
+                </select>
+            </div>
+
+<!----------------------PRECIO-------------------------->
+
+            <div class="controlador-form">
+                <label for="price">Precio</label>
+                <input class="input-style" type="number" name="price" id="price" required>
+            </div>
+
+<!----------------------AGREGAR IMAGEN-------------------------->
+
+            <div class="controlador-form-image">
+                <label class="input-image-boton" for="image">Agregar Imágen</label>
+                <input class="input-image" type="file" name="image" id="image" >
+            </div>   
+            
+<!----------------------PRODUCT ID-------------------------->
+
+            <!-- <div class="controlador-form">
+                <label for="product-id">ID del Producto</label>
+                <input class="input-style" type="number" name="product-id" id="product-id" required>
+            </div> -->
+
+<!----------------------BOTON SUBMIT-------------------------->
+
+            <div class="controlador-form">
+                <button class="button-submit-product" type="submit">¡Agregar Producto!</button>
+            </div>
+        </form>
+    </div>
+
+    
+
+<!------------------------------FOOTER--------------------------------->
+
+    <%- include ('./partials/footer') %>
+
+</body>
+</html>

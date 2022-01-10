@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesProductCart.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>ZERO - Carrito de Compras</title>
+
+</head>
+<body>
+
+<!-----------------------NAV BAR-------------------------->
+
+<%- include('./partials/header')%>
+
+<!--------------------------------TÚ CARRITO----------------------------->
+
+<div>
+    <h1>Tú Carrito</h1>
+</div>
+
+<!---------------------------------BLOG CARDS------------------------------->
+
+<div class="container">
+    <div class="row">
+        <div class="card">
+            <img id="imagen-blog" src="/images/albumes/img020.jpg" alt="">
+            <p id="parrafo1">Nombre de Álbum</p>
+            <p id="parrafo2">Nombre de Artista</p>
+            <p id="parrafo3">$XX.xx</p>
+            <p><i class="fas fa-trash"></i></p>
+        </div>
+    </div>
+
+    <div class="row1">
+        <div class="card1">
+            <img id="imagen-blog" src="/images/albumes/img013.jpg" alt="">
+            <p id="parrafo1">Nombre de Álbum</p>
+            <p id="parrafo2">Nombre de Artista</p>
+            <p id="parrafo3">$XX.xx</p>
+            <!-- <p id="trash2"><i class="fas fa-trash"></i></p> -->
+        </div>
+    </div>
+</div>
+
+<!-----------------------------INFORMACIÓN DE COSTO------------------------------>
+
+<div></div><h3 class="subtitle"> Súbtotal <p class="cash">$XX.xx</p></h3></div>
+<p class="parrafo4">Lorem ipsum dolor sit amet consectetur. <br>Illo nisi velit nobis ipsum fugiat</p>
+<h4 class="subtitle2">Calculador de envío</h4>
+
+<!----------------------------------PRECIO TOTAL------------------------------------>
+
+<button type="submit" id="botton"><p><i class="fas fa-shopping-cart"></i><a href="/user/register"> COMPRAR</a></p></button>
+<p><a href="/products/productList" class="shop">Continue comprando <i class="fas fa-angle-right"></i></a> 
+</p>
+<br>
+
+<!--------------------------------CARDS DE RECOMENDADOS----------------------------->
+
+<h2 class="titulo-recomendados">Recomendados</h2>
+<div>
+    <section class="mas-vendidos">
+        <i class="fas fa-chevron-left"></i>
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/img4.jpg" alt="Álbum - FACE"></a>
+            <h5 class="album-title">FACE</h5>
+            <h5 class="album-title2">Key</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/img5.jpg" alt="Álbum - She is"></a>
+            <h5 class="album-title">She is</h5>
+            <h5 class="album-title2">Jonghyun</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/img3.jpg" alt="Álbum - The Story Of Light - EP1"></a>
+            <h5 class="album-title">The Story Of Light - EP1</h5>
+            <h5 class="album-title2">SHINee</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/img01.jpg" alt="Álbum - Odd"></a>
+            <h5 class="album-title">Odd</h5>
+            <h5 class="album-title2">SHINee</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+        <i class="fas fa-chevron-right"></i>
+    </section>
+
+<!-----------------------------FOOTER------------------------------>
+
+<%- include ('./partials/footer') %> 
+
+
+
+</body>
+</html>

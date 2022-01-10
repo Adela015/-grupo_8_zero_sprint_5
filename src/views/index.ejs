@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO - Home</title>
+    <link rel="stylesheet" href="/css/stylesIndex.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/003cc75b52.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <%- include('./partials/header')%> 
+
+<!-----------------------------SLIDER-------------------------->
+
+<div class="carrousel">
+    <ul>
+        <li><img src="/images/assets/banner-envios-2.png" alt=""></li>
+        <li><img src="/images/assets/banner-envios-2.png" alt=""></li>
+        <li><img src="/images/assets/banner-envios-2.png" alt=""></li>
+        <li><img src="/images/assets/banner-envios-2.png" alt=""></li>
+    </ul>
+</div>
+
+<!-----------------------------------------------------CARDS DE MÁS VENDIDOS------------------------------------>
+
+<div>
+    <h2 class="section-title">Más vendidos</h2>
+    <section class="mas-vendidos">
+        <i class="fas fa-chevron-left"></i>
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail/1"><img class="mas-vendidos-album-img" src="/images/albumes/the-strokes-the-new-abnormal.jpg" alt="Álbum - The New Abnormal"></a>
+            <h5 class="album-title">The New Abnormal</h5>
+            <h5 class="album-title2">The Strokes</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail/1"><img class="mas-vendidos-album-img" src="/images/albumes/rainbows.jpg" alt="Álbum - In Rainbows"></a>
+            <h5 class="album-title">In Rainbows</h5>
+            <h5 class="album-title2">Radiohead</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail/1"><img class="mas-vendidos-album-img" src="/images/albumes/arctic-monkeys-casino.jpg" alt="Álbum - Tranquility Base Hotel & Casino"></a>
+            <h5 class="album-title">Tranquility Base Hotel & Casino</h5>
+            <h5 class="album-title2">Arctic Monkeys</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail/1"><img class="mas-vendidos-album-img" src="/images/albumes/top-scaled-and-icy.jpg" alt="Álbum - Scaled And Icy"></a>
+            <h5 class="album-title">Scaled And Icy</h5>
+            <h5 class="album-title2">Twenty One Pilots</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <i class="fas fa-chevron-right"></i>
+    </section>
+
+
+
+<!---------------------------------------BANNER----------------------------->
+
+<div class="banner-novedades">
+    <a href="#"><img class="banner-novedades-img" src="/images/assets/banner-novedades.png" alt="banner-de-novedades" width="100%"></a>
+</div>
+
+<!--------------------------------GÉNEROS MÚSICALES--------------------------->
+
+<section class="generos">
+    <h3 class="section-title">¡Explorá tu género favorito!</h3>
+
+    <article class="generos-rock">
+        <a href="#"><h2>Rock</h2></a>
+    </article>
+
+    <article class="generos-pop">
+        <a href="#"><h2>Pop</h2></a>
+    </article>
+
+    <article class="generos-urbana">
+        <a href="#"><h2>Urbana</h2></a>
+    </article>
+
+    <article class="generos-clasica" >
+        <a href="#"><h2>Clásica</h2></a>
+    </article>
+
+    <article class="generos-ryb">
+        <a href="#"><h2>R&B</h2></a>
+    </article>
+
+    <article class="generos-electronica">
+        <a href="#"><h2>Electrónica</h2></a>
+    </article>
+
+
+</section>
+
+<!---------------------------------------CARDS DE RECOMENDADOS------------------------------->
+
+<div>
+    <h2 class="section-title">Recomendados para tí</h2>
+    <section class="mas-vendidos">
+        <i class="fas fa-chevron-left"></i>
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/the-strokes-the-new-abnormal.jpg" alt="Álbum - The New Abnormal"></a>
+            <h5 class="album-title">The New Abnormal</h5>
+            <h5 class="album-title2">The Strokes</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/rainbows.jpg" alt="Álbum - In Rainbows"></a>
+            <h5 class="album-title">In Rainbows</h5>
+            <h5 class="album-title2">Radiohead            </h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/arctic-monkeys-casino.jpg" alt="Álbum - Tranquility Base Hotel & Casino"></a>
+            <h5 class="album-title">Tranquility Base Hotel & Casino</h5>
+            <h5 class="album-title2">Arctic Monkeys</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/top-scaled-and-icy.jpg" alt="Álbum - Scaled And Icy"></a>
+            <h5 class="album-title">Scaled And Icy</h5>
+            <h5 class="album-title2">Twenty One Pilots</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <i class="fas fa-chevron-right"></i>
+    </section>
+</section>
+
+    <div>
+        <a href="/products/productList"><button class="verMas">Ver más</button></a>
+    </div>
+
+<!---------------------------FOOTER--------------------------->
+
+    <%- include ('./partials/footer') %> 
+
+</body>
+</html>

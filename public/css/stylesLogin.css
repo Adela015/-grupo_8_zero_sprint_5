@@ -1,0 +1,166 @@
+:root{
+    --negro: #000000;
+    --grisOscuro: #474747;
+    --blanco: #FFFFFF;
+    --grisClaro: #EBEBEB;
+    --rosaAcento: #E0218A;
+    }
+    
+    /* G E N E R A L E S */
+    
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    main p {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #boxLogin, #form{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+    }
+    
+    /* Inputs */
+    
+    .reg:hover{
+        background-color: #E0218A;
+        
+    }
+    #submit:hover{
+        background-color: #E0218A;
+        transition: all 200ms;
+        border: none;
+        border-radius: 7px;
+        padding:10px
+    }
+    #submit{
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 7px;
+        padding:10px
+    
+    
+    }
+    #correo{
+        margin-top: 20px;
+    }
+    #contra{
+        margin-top: 8px;
+    }
+    #recordar{
+        margin-top: 8px;
+    }
+    #form{
+        display: flex;
+    }
+    /* botones facebook y google */
+    button{
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding:10px;
+        }
+    button:hover{
+        background-color: #E0218A;
+        transition: all 200ms;
+        border: none;
+        border-radius: 10px;
+        padding:10px;
+    }
+    #botones{
+        display: inline-flex;
+    }
+    .face{
+        margin-right: 7px;
+    }
+    .google{
+        margin-left: 7px;
+    }
+    
+    /* Lineas "O" y "Rosa" */
+
+    .lineaRosa{
+        padding: 2px;
+        background-color: #E0218A;
+        
+    }
+
+
+    #lineasPos{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .lineaL{
+        height: 3px;
+        margin-left: 0%;
+        width: 30%;
+    }
+    .lineaR{
+        height: 3px;
+        margin-right: 0%;
+        width: 30%;
+    }
+    hr{
+        
+        height: 0.5px;
+        width: 50%;
+        background-color: #E0218A;
+    }
+    /* Margen del login */
+    #main-login{
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 10%;
+        
+    }
+    body{
+        height: auto;
+        width: auto;
+        overflow-y: scroll;
+        scrollbar-color: dark;
+    }
+    #section-login{
+        padding: 100px;
+        padding-top: 80px;
+        background-color:white;
+        margin-left: 30%;
+        margin-right: 30%;
+        padding-bottom: 50px;
+        box-shadow: 5px 5px 25px grey;        
+    }
+    @media  screen and (min-width:450px) {
+        main section div h1.titulo{
+            text-align: center;
+            font-size: 28px;
+        }
+        
+        main#section-login{
+            font-size: 25px;
+
+        }
+    
+}
+@media  screen and (min-width:767px) {
+    #section-login{
+        margin: 0%;
+    }
+}
+@media  screen and (max-width:767px) {
+    #section-login{
+        margin: 0%;
+    }
+}

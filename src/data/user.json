@@ -1,0 +1,74 @@
+[
+ {
+  "nombre": "Alexia",
+  "apellido": "Coppola",
+  "email": "alex@gmail.com",
+  "contraseña": "12510961390",
+  "fecha": "2001-03-05",
+  "id": 1
+ },
+ {
+  "nombre": "Agustín",
+  "apellido": "Godoy",
+  "email": "agus@gmail.com",
+  "contraseña": "12345678",
+  "fecha": "1998-01-06",
+  "id": 2
+ },
+ {
+  "nombre": "Nicolás",
+  "apellido": "Tolaba",
+  "email": "nico@gmail.com",
+  "contraseña": "12345678",
+  "fecha": "2003-06-06",
+  "id": 3
+ },
+ {
+  "nombre": "Gala",
+  "apellido": "Cabrera",
+  "email": "gali@gmail.com",
+  "contraseña": "galula12",
+  "fecha": "2004-03-19",
+  "id": 4
+ },
+ {
+  "nombre": "Zoe ",
+  "apellido": "Mia",
+  "email": "zoee@gmail.com",
+  "contraseña": "12345678",
+  "fecha": "2002-11-25",
+  "id": 5
+ },
+ {
+  "nombre": "Juan",
+  "apellido": "Perez",
+  "email": "juanip@gmail.com",
+  "contraseña": "imaginacionnula",
+  "fecha": "2002-01-01",
+  "id": 6
+ },
+ {
+  "nombre": "Pauli",
+  "apellido": "Gonzalez C",
+  "email": "paucabrerita3@gmail.com",
+  "contraseña": "2468101214",
+  "fecha": "2002-11-08",
+  "id": 7
+ },
+ {
+  "nombre": "",
+  "apellido": "",
+  "email": "",
+  "contraseña": "Xs8ixXKKUF6pXXj",
+  "fecha": "",
+  "id": 8
+ },
+ {
+  "nombre": "",
+  "apellido": "",
+  "email": "",
+  "contraseña": "Xs8ixXKKUF6pXXj",
+  "fecha": "",
+  "id": 9
+ }
+]

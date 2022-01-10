@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesProductDetail.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <title>ZERO - Detalle del producto</title>
+
+</head>
+<body>
+
+<!-----------------------NAV BAR-------------------------->
+
+<%- include('./partials/header')%> 
+
+<!----------------------------DETALLE DEL PRODUCTO-------------------------->
+
+<div>
+    <h1>Detalle del producto</h1>
+</div>
+
+<!------------------------------ENLACES-------------------------------------->
+
+<div id="ruta">
+    <a href="/" class="inicio"> Home </a><i class="fas fa-chevron-right"></i><a> <%=producto.name%> - <a><%=producto.artist%></a></a>
+</div>
+
+<!-------------------------------POLAROID--------------------------------->
+<figure>
+    <img src="/images/albumes/<%=producto.image%> ">
+    <figcaption><%=producto.artist%></figcaption>
+</figure>
+
+<!-------------------------INFORMACIÓN DEL PRODUCTO------------------------>
+
+<div>
+    <p class="parrafo1"><%=producto.name%></p>
+    <br>
+    <p class="parrafo2"><%=producto.artist%></p>
+    <br>
+    <p class="precio"><%=mil(producto.price)%></p>
+</div>
+
+<!---------------------------------BOTONES---------------------------------->
+
+<div>
+    <button type="submit" id="botton1"><p><i class="fas fa-shopping-cart"></i><a href="/products/productCart" id="contenido"> Agregar al carrito</a></p></button>
+    <br>
+    <button type="submit" id="botton2"><p><i class="fas fa-heart" id="heart"></i><a href="/products/wishList" id="contenido"> Lista de deseos</a></p></button>
+    <br>
+    <br>
+    <a href="/products/productEdit/<%= producto.id %>" id="editarBoton">Editar</a>
+    <br>
+    <br>
+    <br>
+        <form action="/products/borrar/<%= producto.id %>?_method=delete" enctype="multipart/form-data" method="POST">
+        <input type="submit" value="Borrar" id="botonEliminar">
+    </form>
+
+    <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        <br>
+        Fugiat sequi, quia quas delectus sint cum. Ea perspiciatis</p>
+    </div>
+
+
+<!--------------------------REPRODUCTOR DE MÚSICA---------------------------->
+
+<div>
+    <section class="mas-vendidos1" id="card1">
+        <article class="mas-vendidos-album1" id="card2">
+            <!-- <i class="fas fa-angle-down"></i> -->
+            <p id="texto-musica">ESCUCHA LA PLAYLIST</p>
+            <img class="mas-vendidos-album-img1" src="/images/albumes/heal-the-world.jpg" alt="Álbum - We play">
+            <h5 class="album-title1">Artista</h5>
+            <h5 class="album-title02">Titulo canción</h5>
+            <audio controls autoplay>
+                <source src="/audio/heal-the-world.mp3" type="audio/ogg">
+                <source src="/audio/heal-the-world.mp3" type="audio/mpeg">
+                Tú navegador no soporta este elemento audio.
+            </audio>
+            <p id="texto-musica1">Reproductor de Música</p>
+        </article>
+</div>
+<br>
+
+<!----------------------------BIOGRAFÍA DEL ARTISTA---------------------------->
+
+<div class="container">
+    <h2 class="titulo-bio">Biografía del Artista</h2>
+    <div class="row">
+        <div class="card">
+            <p id="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quas quibusdam possimus non. Consequuntur inventore nobis labore vel blanditiis dolorem debitis impedit molestias provident? Aperiam consectetur saepe dolorum. Quibusdam, porro.</p>
+        </div>
+    </div>
+</div>
+
+<!---------------------------CARDS DE RECOMENDADOS----------------------------->
+
+<div><h2 class="recomendados1">Recomendados</h2></div>
+<div>
+    <section class="mas-vendidos">
+        <i class="fas fa-chevron-left"></i>
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/img061.jpg" alt="Álbum - Pink Magic"></a>
+            <h5 class="album-title">Pink Magic</h5>
+            <h5 class="album-title2">Yesung</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/img079.jpg" alt="Álbum - The lonely flame"></a>
+            <h5 class="album-title">The lonely flame</h5>
+            <h5 class="album-title2">Zhoumi</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/img037.jpg" alt="Álbum - Bout You"></a>
+            <h5 class="album-title">Bout You </h5>
+            <h5 class="album-title2">D&E</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail"><img class="mas-vendidos-album-img" src="/images/albumes/img068.jpg" alt="Álbum - California Love"></a>
+            <h5 class="album-title">California Love</h5>
+            <h5 class="album-title2">Donghae</h5>
+            <p class="album-price">$xx.xx  <a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+        <i class="fas fa-chevron-right"></i>
+    </section>
+
+<!-----------------------------FOOTER------------------------------------->
+
+<%- include ('./partials/footer') %> 
+
+</body>
+</html>

@@ -1,0 +1,476 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*--------------------------NAVBAR----------------------*/
+
+nav.nav-bar div.enlace a img.logo{
+    max-width: 30%;
+    padding-left: 10px;
+}
+
+.nav-bar{
+    color: #ffffff;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20%;
+}
+
+.nav-bar-accesos{
+    display:none;
+}
+.nav-bar-accesos a{
+    transition: all 200ms;
+}
+.nav-bar-accesos a:hover{
+    color: #e0218a;
+    transition: all 200ms
+}
+
+.fa-bars{
+    margin-right: 20px;
+    font-size: 28px;
+    transition: all 200ms
+}
+
+i.fa-search:hover{
+    color: #e0218a;
+    transition: all 200ms
+}
+
+div.nav-bar-icons a i.fa-shopping-cart:hover{
+    color: #e0218a;
+    transition: all 200ms
+}
+
+div.nav-bar-icons a i.fa-shopping-cart{
+    position: relative;
+    left: 70%;
+    font-size: 35px;
+    transition: all 200ms
+}
+
+i.fa-user-circle{
+    position: relative;
+    right: -40%;
+    font-size: 40px;
+    transition: all 200ms
+}
+
+.search-bar{
+    display: none;
+}
+
+.nav-bar-icons{
+    display: none;
+}
+
+/*------------------TÍTULO----------------*/
+div h1{
+    font-size: 40px;
+    text-align: center;
+    margin-top: -20%;
+    border-bottom: 8px solid #e0218a ;
+}
+
+/*------------BLOG CARD----------*/
+
+.container{
+    margin: 0px;
+    margin-bottom: 10%;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #ffffff;
+    position: relative;
+    flex: 1;
+    max-width: 1000px;
+    height: 300px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px grey;
+}
+
+
+.row1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card1{
+    background: #ffffff;
+    position: relative;
+    flex: 1;
+    max-width: 1000px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 25px grey;
+}
+
+#imagen-blog{
+    width: 48%;
+    margin-top: 10%;
+    margin-left: 6.5%;
+}
+
+#parrafo1{
+    font-size: 21px;
+    margin-left: 57%;
+    margin-bottom: 2%;
+    position: relative;
+    bottom: 60%;
+    font-weight: 600
+}
+
+#parrafo2{
+    font-size: 21px;
+    margin-left: 57%;
+    margin-bottom: 2%;
+    position: relative;
+    bottom: 60%;
+}
+
+#parrafo3{
+    font-size: 24px;
+    margin-left: 70%;
+    margin-bottom: 2%;
+    position: relative;
+    bottom: 60%;
+}
+
+
+/*-------------------FOOTER------------------*/
+
+footer{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    color: white;
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 75px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer div a{
+    margin: 5px
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 200ms
+}
+
+footer a:hover{
+    color: #e0218a;
+    transition: all 200ms
+}
+
+.footer-links{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.footer-links{
+    width: auto;
+}
+
+/*------------ICON SOCIAL MEDIA--------*/
+
+.social-media-icon{
+    align-self:center;
+    padding: 0px 5px;
+}
+
+footer h6{
+    margin:0;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+section h3{
+    text-align: center;
+
+}
+
+section article a{
+    text-decoration: none;
+}
+
+div.social-media{
+    margin-top: 10px;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    transition: all 200ms
+}
+
+.fa-instagram:hover{
+    color: #e0218a;
+    transition: all 200ms
+}
+
+.fa-facebook:hover{
+    color: #e0218a;
+    transition: all 200ms
+}
+
+.fa-youtube:hover{
+    color: #e0218a;
+    transition: all 200ms
+}
+
+.fa-tiktok:hover{
+    color: #e0218a;
+    transition: all 200ms
+}
+/*---------------------MEDIA QUERIES DEKTOP--------------------*/
+
+@media (min-width: 768px) {
+    .search-bar{
+        display: flex;
+        border: none;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .search-button{
+        border:none;
+        background-color: black;
+        margin-left: 10px;
+    }
+
+    .search-input{
+        text-align: center;
+        border-radius: 20px;
+        width: 300px;
+        border: none;
+    }
+
+    .fa-search{
+        color: white;
+        font-size: 30px;
+    }
+
+    .nav-bar-icons{
+        margin-left: 150px;
+        display: flex;
+    }
+
+    .fa-user-circle{
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px;
+    }
+
+    .fa-shopping-cart{
+        color: white;
+        font-size: 30px;
+    }
+    
+    .title-mas-vendidos{
+        text-align: center;
+    }
+
+    .mas-vendidos{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 50px;
+    }
+
+    section .mas-vendidos h2{
+        align-items: center;
+    }
+
+    .mas-vendidos-album{
+        width: 35%;
+    }
+
+    .recomendados-album{
+        width: 35%;
+    }
+
+    .ver-mas{
+        display: block;
+        text-align: center;
+    }
+
+    .social-media-icon{
+        font-size: 30px;
+    }
+
+/*----------FOOTER-------*/
+    footer{
+        position: relative;
+        top: 50px;
+    }
+/*----------NAVBAR--------*/
+    nav .fa-bars{
+        display: none;
+    }
+
+    nav .nav-bar{
+        margin: auto;
+    }
+
+    .nav-bar{
+        display: flex;
+        height: 110px;
+        justify-content: space-around;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .nav-bar-accesos{
+        display: flex;
+    }
+
+    .nav-bar-accesos li{
+        margin-right: 15px;
+        list-style: none;
+        font-weight: 700;
+    }
+
+    .nav-bar-accesos li a{
+        text-decoration: none;
+        color: white;
+    }
+
+    nav.nav-bar div.enlace a img.logo{
+        max-height: 85px;
+        min-width: 190px;
+    }
+
+    .nav-bar-icons{
+        margin-right: 150px;
+    }
+    
+    .search-bar{
+        display: flex;
+        border: none;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .search-button{
+        border:none;
+        background-color: black;
+        margin-left: 10px;
+    }
+
+    .search-input{
+        text-align: center;
+        border-radius: 20px;
+        width: 300px;
+        border: none;
+    }
+
+    .fa-search{
+        color: white;
+        font-size: 30px;
+    }
+    
+    .nav-bar-icons{
+        margin-left: 150px;
+        display: flex;
+    }
+    .fa-user-circle{
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px;
+        transition: all 200ms;
+    }
+
+    .fa-user-circle:hover{
+        color: #e0218a;
+        transition: all 200ms
+    }
+    /*------IMAGEN BLOG CARD-----*/
+#imagen-blog{
+    width: 25%;
+    margin-top: 2%;
+    margin-left: 4%;
+    transition-property: all;
+    transition-duration: 600ms;
+}
+#imagen-blog:hover{
+    transform: translateX(-80px);
+    transition-property: all;
+    transition-duration: 600ms;
+}
+/*-------PARRAFOS DE BLOG CARD-----*/
+#parrafo1{
+    font-size: 30px;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    position: relative;
+    bottom: 75%;
+    font-weight: 600
+}
+
+#parrafo2{
+    font-size: 26px;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    position: relative;
+    bottom: 73%;
+}
+
+#parrafo3{
+    font-size: 30px;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    position: relative;
+    bottom: 70%;
+}
+h2.titulo-recomendados{
+    margin-top: -5%;
+}
+div h1{
+    margin-bottom: 4%;
+    margin-top: -18%;
+}
+
+}
+
+/*-----------------------------MEDIA QUERIES MOBILE-------------------------*/
+
+@media screen and (min-width: 450px) {
+
+
+}

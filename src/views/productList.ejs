@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesProductList.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>ZERO - Catálogo</title>
+</head>
+<body>
+    
+<!-----------------------NAV BAR-------------------------->
+
+<%- include('./partials/header')%>
+
+    <div><h4 class="catalogo">Catálogo</h4></div>
+
+<!-----------------------------FILTROS----------------------------->
+
+<div id="filtros">
+    <h2 class="filtros">Filtros</h2>
+    <br>
+    <h3 class="artista-filtros">Artista | Álbum</h3>
+    <br>
+    <input type="search" name="buscar" placeholder="¿Qué estás buscando?">
+    <br>
+    <br>
+    <h3 class="artista-filtros">Formato</h3>
+    <input type="radio" name="si-no">
+    <label for="text" class="">CD</label>
+    <br>
+    <input type="radio" name="si-no">
+    <label for="text" class="">Vinilo</label>
+    <br>
+    <input type="radio" name="si-no">
+    <label for="text" class="">Casette</label>
+    <br>
+    <input type="radio" name="si-no">
+    <label for="text" class="">Artículo especial</label>
+    <br>
+    <br>
+    <h3 class="artista-filtros">Género Músical</h3>
+    <input type="checkbox" name="selector">
+    <label for="text" class="">Rock</label>
+    <br>
+    <input type="checkbox" name="selector">
+    <label for="text" class="">Punk</label>
+    <br>
+    <input type="checkbox" name="selector">
+    <label for="text" class="">Cumbia</label>
+    <br>
+    <input type="checkbox" name="selector">
+    <label for="text" class="">Clásico</label>
+    <br> 
+    <input type="checkbox" name="selector">
+    <label for="text" class="">Pop</label>
+    <br>
+    <input type="checkbox" name="selector">
+    <label for="text" class="">Kpop</label>
+    <br>
+    <br>
+    <label for="text" class="">1950_________________2021</label>
+    <br>
+    <input type="range" name="rango">
+    <br>
+</div> 
+
+
+
+<!----------------------------------------CARDS DE RECOMENDADOS------------------------------------------->
+
+<div>
+
+    <% for(let producto of productos){ %>
+
+    <section class="mas-vendidos">
+        <article class="mas-vendidos-album">
+            <a href="/products/productDetail/<%=producto.id%>"><img class="mas-vendidos-album-img" src="/images/albumes/<%=producto.image%>" alt="Álbum - I'm Home"></a>
+            <h5 class="album-title"><%=producto.name%></h5>
+            <h5 class="album-title2"><%=producto.artist%></h5>
+            <h5 class="album-title2"><%=producto.category%> </h5>
+            <p class="album-price"><%=mil(producto.price)%><a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+            <div>
+                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+            </div>
+        </article>
+    </section>
+
+    <%} %> 
+</div>
+
+
+<!------------------------------LISTA DE NÚMEROS----------------------------->
+
+<div class="lista-numerica">
+    <a href="/products/productList"><i class="fas fa-chevron-left"></i></a>
+        <a href="/products/productList">1</a>
+        <!-- <a href="/products/productList2">2</a> -->
+    <a href="#"><i class="fas fa-chevron-right"></i></a>
+</div>
+
+<!---------------------------AGREGAR O EDITAR PRODUCTOS--------------------------------->
+
+<div class="contenedor-addproduct">
+    <a class="addproduct" href="/products/productAdd">Agregar producto</a>
+</div>
+
+<!---------------------------------------FOOTER----------------------------------------->
+
+<%- include ('./partials/footer') %> 
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+[
+ {
+  "id": "1",
+  "name": "I'm Home",
+  "artist": "Minho",
+  "description": "Primer mini albúm de Minho",
+  "price": 10000,
+  "image": "img-1641277373286.jpg"
+ },
+ {
+  "name": "Planet Her",
+  "artist": "Doja Cat",
+  "description": "Álbum de doja cat",
+  "price": 1600,
+  "category": "CD",
+  "image": "img-1641212330946.jpg",
+  "id": 2
+ },
+ {
+  "id": "4",
+  "name": "Red Light",
+  "artist": "F(x)",
+  "description": "Album de f(x)",
+  "price": 9000,
+  "image": "img-1641277489958.jpg"
+ },
+ {
+  "id": "5",
+  "name": "We play",
+  "artist": "Weeekly",
+  "description": "Album de Weeekly",
+  "price": 7700,
+  "image": "img-1641277130121.jpg"
+ },
+ {
+  "name": "Saturation",
+  "artist": "Brockhampton",
+  "description": "Primer álbum de la trilogía SATURATION",
+  "price": 2000,
+  "image": "img-1641272192170.png",
+  "category": "cd",
+  "id": 6
+ },
+ {
+  "name": "Saturation II",
+  "artist": "Brockhampton",
+  "description": "Segundo álbum de la trilogía SATURATION",
+  "price": 2000,
+  "image": "img-1641272640797.png",
+  "category": "cd",
+  "id": 7
+ },
+ {
+  "name": "Saturation III",
+  "artist": "Brockhampton",
+  "description": "Tercer álbum de trilogía SATURATION",
+  "price": 2000,
+  "image": "img-1641272860894.jpg",
+  "id": 8
+ }
+]
