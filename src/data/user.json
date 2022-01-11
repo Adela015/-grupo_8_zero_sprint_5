@@ -70,5 +70,21 @@
   "contraseña": "Xs8ixXKKUF6pXXj",
   "fecha": "",
   "id": 9
+ },
+ {
+  "nombre": "prueba",
+  "apellido": "pruebita",
+  "email": "prueba@gmail.com",
+  "contraseña": "$2a$10$1NUtjdfqBbfVHkeVpt6jGu9LInrQ8Vnf1BeyK5jjcAVux6BQtbrBS",
+  "fecha": "2022-01-11",
+  "id": 10
+ },
+ {
+  "nombre": "Paulina",
+  "apellido": "Cabrera",
+  "email": "paucab@gmail.com",
+  "contraseña": "$2a$10$Sw21A4c8aIQH7s03Va/afu/VTFem.gqI5j1j2FmMv9WLiCfFR2Dc.",
+  "fecha": "2021-08-25",
+  "id": 11
  }
 ]
