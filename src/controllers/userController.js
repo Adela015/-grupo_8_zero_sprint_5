@@ -3,7 +3,7 @@ const path = require('path');
 const jsonDB = require ('../model/jsonDatabase');
 const productModel = jsonDB('user');
 const bcrypt= require('bcryptjs')
-
+const {validationResult} = require('express-validator')
 
 const userController = {
 
@@ -27,6 +27,9 @@ const userController = {
         res.render('login');
     },
     
+    ingreso: (req,res) =>{
+
+    }
 }
 
 
