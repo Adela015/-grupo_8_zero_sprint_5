@@ -3,7 +3,8 @@ const path = require('path');
 const jsonDB = require ('../model/jsonDatabase');
 const productModel = jsonDB('user');
 const bcrypt= require('bcryptjs')
-const {validationResult} = require('express-validator')
+const {validationResult} = require('express-validator');
+const { send } = require('express/lib/response');
 
 const userController = {
 
@@ -27,8 +28,14 @@ const userController = {
         res.render('login');
     },
     
-    ingreso: (req,res) =>{
-
+    access: (req,res) =>{
+        let errors = validationResult(req);
+        if (errors.isEmpty()){
+            res.redirect('/')
+        } else {
+            res.render('login', {errors: errors.array()})
+        }
+        
     }
 }
 

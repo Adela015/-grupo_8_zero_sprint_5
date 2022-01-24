@@ -86,5 +86,21 @@
   "contraseña": "$2a$10$Sw21A4c8aIQH7s03Va/afu/VTFem.gqI5j1j2FmMv9WLiCfFR2Dc.",
   "fecha": "2021-08-25",
   "id": 11
+ },
+ {
+  "nombre": "Agustín",
+  "apellido": "Godoy",
+  "email": "agustin.em.godoy@gmail.com",
+  "contraseña": "$2a$10$C/VKNfcnPQvt/A/4NqcAn.0iiPswDykFT9n0Tc3VI/J7DsdvcKVdS",
+  "fecha": "1998-01-06",
+  "id": 12
+ },
+ {
+  "nombre": "",
+  "apellido": "",
+  "email": "agustin.em.godoy@gmail.com",
+  "contraseña": "$2a$10$URlqK79FkyoNfHKn0gv2XO/zgEP5g965XRRtK/ZW57p9rpbSsab7.",
+  "fecha": "",
+  "id": 13
  }
 ]

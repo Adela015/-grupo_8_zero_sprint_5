@@ -30,7 +30,14 @@
             <div id="boxLogin">
                 <h1 class="titulo">INICIÁ SESIÓN</h1>
                 <div class="lineaRosa"></div>
-                <form action="/users/login" method="POST" id="form">
+
+                <% if (locals.errors){ 
+                    errors.forEach(error=> { %>
+                    <p class="error"> <%= error.msg %> </p>
+                <%    })
+                } %>
+
+                <form action="/user/login" method="POST" id="form">
                     
 
                     

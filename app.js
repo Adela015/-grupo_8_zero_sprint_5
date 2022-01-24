@@ -3,7 +3,12 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const mainController = require('./src/controllers/mainController');
+const session = require('express-session');
+const cookie = require('cookie-parser');
+
+
 const port = 3000;
+
 //const multer = require('multer')
 
 //RUTAS
@@ -19,8 +24,10 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/src/views'));
 
 //MIDDLEWARES
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(session({secret: 'session', saveUninitialized: true, resave: false}));
+app.use(cookie())
 
 
 
