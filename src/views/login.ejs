@@ -24,33 +24,34 @@
     <%- include('./partials/header')%> 
 
 
-
     <main id="main-login">
         <section id="section-login">
             <div id="boxLogin">
                 <h1 class="titulo">INICIÁ SESIÓN</h1>
                 <div class="lineaRosa"></div>
 
-                <% if (locals.errors){ 
-                    errors.forEach(error=> { %>
-                    <p class="error"> <%= error.msg %> </p>
-                <%    })
-                } %>
+                <% if (locals.errors && errors.email){ %>
+                    <p class="error"> <%= errors.email.msg %> </p>
+                <% } %>
+
+                <% if(locals.errors && errors.contraseña){ %> 
+                    <p class="error"> <%= errors.password.msg %> </p>
+                <% } %> 
 
                 <form action="/user/login" method="POST" id="form">
                     
 
                     
-                    <input type="email" name="correo" id="correo" placeholder="correo electrónico">
+                    <input type="email" name="email" id="correo" placeholder="correo electrónico">
 
                     
-                    <input type="password" name="contra" id="contra" placeholder="contraseña">
+                    <input type="password" name="contraseña" id="contra" placeholder="contraseña">
 
                     
                     <a href="#" style="color: black;">¿Olvidaste tu contraseña?</a>
 
                     
-                    <label for=""><input type="checkbox" name="recordar" id="recordar"> Recordarme</label><br>
+                    <label for=""><input type="checkbox" name="remember" id="remember"> Recordarme</label><br>
                     <input type="submit" id="submit"value="Ingresar"><br>
                     
                     <div id="lineasPos"><hr class="lineaL"> O <hr class="lineaR"></div><br>
@@ -69,6 +70,15 @@
 
                     
                 </form>
+
+                <!-- <% if (locals.email) { %>
+                    <p> <%= locals.email %> </p>
+                <% } %>
+
+                <% if (locals.password) { %>
+                    <p> <%= locals.password %> </p>
+                <% } %> -->
+
 
             </div>
 

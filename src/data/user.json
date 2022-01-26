@@ -86,53 +86,5 @@
   "contraseña": "$2a$10$Sw21A4c8aIQH7s03Va/afu/VTFem.gqI5j1j2FmMv9WLiCfFR2Dc.",
   "fecha": "2021-08-25",
   "id": 11
- },
- {
-  "nombre": "Agustín",
-  "apellido": "Godoy",
-  "email": "agustin.em.godoy@gmail.com",
-  "contraseña": "$2a$10$C/VKNfcnPQvt/A/4NqcAn.0iiPswDykFT9n0Tc3VI/J7DsdvcKVdS",
-  "fecha": "1998-01-06",
-  "id": 12
- },
- {
-  "nombre": "",
-  "apellido": "",
-  "email": "agustin.em.godoy@gmail.com",
-  "contraseña": "$2a$10$URlqK79FkyoNfHKn0gv2XO/zgEP5g965XRRtK/ZW57p9rpbSsab7.",
-  "fecha": "",
-  "id": 13
- },
- {
-  "nombre": "Paulina",
-  "apellido": "Cabrera",
-  "email": "",
-  "contraseña": "$2a$10$wtS2/KQydieVmwVPl/h7bem30uTSs5ysdak5xKGahPHcYJyGJ.QIC",
-  "fecha": "",
-  "id": 14
- },
- {
-  "nombre": "",
-  "apellido": "",
-  "email": "",
-  "contraseña": "$2a$10$t3c8DWLSUP26w.zPit2XUOw.viIvvWdPYqBvNdXENPsRHZr4GyiHm",
-  "fecha": "",
-  "id": 15
- },
- {
-  "nombre": "",
-  "apellido": "",
-  "email": "",
-  "contraseña": "$2a$10$Uygl9Z9v5hRVzgOoYR3o0uxGQSSl.5ydyVLrAzLL5HQvEHMNOiqcW",
-  "fecha": "",
-  "id": 16
- },
- {
-  "nombre": "",
-  "apellido": "",
-  "email": "",
-  "contraseña": "$2a$10$2cE58yxVhPY9YX3HcUsY2O8fWP6rbFgB6wEBjO9OkJujeEwGHbwAu",
-  "fecha": "",
-  "id": 17
  }
 ]

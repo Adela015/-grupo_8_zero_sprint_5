@@ -1,10 +1,12 @@
 const req = require('express/lib/request');
 const path = require('path');
+const fs = require('fs');
 const jsonDB = require ('../model/jsonDatabase');
 const productModel = jsonDB('user');
 const bcrypt= require('bcryptjs')
 const {validationResult} = require('express-validator');
 const { send } = require('express/lib/response');
+const bcryptjs = require('bcryptjs');
 
 const userController = {
 
@@ -31,25 +33,44 @@ const userController = {
             });
             
         }
+        res.send('')
         
     },
     
-
     login:(req,res) => {
         res.render('login');
     },
     
     access: (req,res) =>{
-        let errors = validationResult(req);
-        if (errors.isEmpty()){
-            res.redirect('/')
-        } else {
-            res.render('login', {errors: errors.array()})
+
+        let users = productModel.findField('email', req.body);
+
+        if (users){
+            let confirm = bcrypt.compareSync(req.body.contraseña, users.contraseña)
+            if(confirm){
+                delete users.contraseña
+                req.session.userLogged = users
+
+                if(req.body.remember){
+                    res.cookie('email', req.body.email, {maxAge: 1000*60*60})
+                }
+                return res.redirect('/')
+            }
+            return res.render('login',{
+                errors: {
+                    contraseña: {
+                        msg: 'La contraseña no es válida'
+                    }
+                }
+            })
         }
-        
+        return res.render('login',{
+            errors: { 
+                email: { msg: 'Por favor, ingresá un email válido'},
+            },
+        })
     }
 }
-
 
 
 module.exports = userController;
