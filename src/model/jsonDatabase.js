@@ -74,7 +74,12 @@ const model = function (name) {
             });
             this.writeFile(updatedRows);
         },
-        
+      //Busca los usuarios
+        findField: function(field, text){
+            let allUsers= this.all();
+            let userFound= allUsers.find(oneUser => oneUser[field] === text)
+            return userFound;
+        }
     }
 }
 

@@ -24,18 +24,20 @@
     <%- include('./partials/header')%> 
 
 
-
     <main id="main-login">
         <section id="section-login">
             <div id="boxLogin">
                 <h1 class="titulo">INICIÁ SESIÓN</h1>
                 <div class="lineaRosa"></div>
 
-                <% if (locals.errors){ 
+                <% if (locals.errors && errors.email){ 
                     errors.forEach(error=> { %>
-                    <p class="error"> <%= error.msg %> </p>
+                    <p class="error"> <%= error.email.msg %> </p>
                 <%    })
                 } %>
+                <% if(locals.errors && errors.contraseña){ %> 
+                    <p class="error"> <%= errors.password.msg %> </p>
+                <% } %> 
 
                 <form action="/user/login" method="POST" id="form">
                     
@@ -70,13 +72,13 @@
                     
                 </form>
 
-                <% if (locals.email) { %>
+                <!-- <% if (locals.email) { %>
                     <p> <%= locals.email %> </p>
                 <% } %>
 
                 <% if (locals.password) { %>
                     <p> <%= locals.password %> </p>
-                <% } %>
+                <% } %> -->
 
 
             </div>
