@@ -31,7 +31,7 @@ const userController = {
     
     access: (req,res) =>{
 
-        let users = productModel.findField('email', req.body);
+        let users = productModel.findField('email', req.body.email);
 
         if (users){
             let confirm = bcrypt.compareSync(req.body.contraseña, users.contraseña)
