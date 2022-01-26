@@ -14,17 +14,7 @@ const userController = {
         res.render('register')
     },
     create: (req,res)=>{
-        let usuario = {
-            nombre: req.body.nombre,
-            apellido: req.body.apellido,
-            email: req.body.email,
-            contraseña: bcrypt.hashSync(req.body.contraseña),
-            fecha: req.body.fecha
-        }
-        productModel.create(usuario);
-        res.redirect('/')
-    },
-    processRegister:(req, res) =>{
+
         const result = validationResult(req)
         if (result.errors.length > 0) {
             return res.render('register', {
@@ -33,22 +23,41 @@ const userController = {
             });
             
         }
-        res.send('')
         
+        let userInDb = productModel.findField('email', req.body.email)
+
+        if(userInDb) {
+            return res.render('register', {
+                errors: {email:{
+                    msg: 'Este correo ya está registrado'
+                }},
+                oldData: req.body
+            })
+        }
+
+        let usuario = {
+            nombre: req.body.nombre,
+            apellido: req.body.apellido,
+            email: req.body.email,
+            contraseña: bcrypt.hashSync(req.body.password),
+            fecha: req.body.fecha
+        }
+        productModel.create(usuario);
+        res.redirect('/')
     },
-    
+
     login:(req,res) => {
         res.render('login');
     },
-    
+
     access: (req,res) =>{
 
         let users = productModel.findField('email', req.body.email);
 
         if (users){
-            let confirm = bcrypt.compareSync(req.body.contraseña, users.contraseña)
+            let confirm = bcrypt.compareSync(req.body.password, users.password)
             if(confirm){
-                delete users.contraseña
+                delete users.password
                 req.session.userLogged = users
 
                 if(req.body.remember){
@@ -56,9 +65,9 @@ const userController = {
                 }
                 return res.redirect('/')
             }
-            return res.render('login',{
-                errors: {
-                    contraseña: {
+            return res.render('user/login',{
+                error: {
+                    password: {
                         msg: 'La contraseña no es válida'
                     }
                 }
@@ -69,7 +78,19 @@ const userController = {
                 email: { msg: 'Por favor, ingresá un email válido'},
             },
         })
-    }
+    },
+    // processRegister:(req, res) =>{
+    //     const result = validationResult(req)
+    //     if (result.errors.length > 0) {
+    //         return res.render('register', {
+    //             errors: result.mapped(),
+    //             oldData: req.body
+    //         });
+            
+    //     }
+    //     res.redirect('/')
+        
+    // }
 }
 
 

@@ -9,7 +9,7 @@ const validationsLogin = [
     body('password').isLength({min: 8}).withMessage('Debes ingresar una contraseña de mínimo 8 carácteres')
 ]
 
-const validations =[
+const validationsRegister =[
     body('nombre').notEmpty().withMessage('Debes ingresar tu nombre'),
     body('apellido').notEmpty().withMessage('Debes ingresar tu apellido'),
     body('email').notEmpty().isEmail().withMessage('Debes ingresar un correo electrónico'),
@@ -20,7 +20,7 @@ const validations =[
 
 router.get('/register', userController.register) //http://localhost:3000/user/register
 
-router.post('/register', validations , userController.processRegister)
+router.post('/register', validationsRegister , userController.processRegister)
 
 router.post('/register', userController.create)
 
