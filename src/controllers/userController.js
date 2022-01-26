@@ -34,9 +34,9 @@ const userController = {
         let users = productModel.findField('email', req.body);
 
         if (users){
-            let confirm = bcrypt.compareSync(req.body.password, users.password)
+            let confirm = bcrypt.compareSync(req.body.contraseña, users.contraseña)
             if(confirm){
-                delete users.password
+                delete users.contraseña
                 req.session.userLogged = users
 
                 if(req.body.remember){
@@ -44,15 +44,15 @@ const userController = {
                 }
                 return res.redirect('/')
             }
-            return res.render('user/login',{
-                error: {
-                    password: {
+            return res.render('login',{
+                errors: {
+                    contraseña: {
                         msg: 'La contraseña no es válida'
                     }
                 }
             })
         }
-        return res.render('user/login',{
+        return res.render('login',{
             errors: { 
                 email: { msg: 'Por favor, ingresá un email válido'},
             },

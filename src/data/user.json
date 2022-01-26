@@ -102,5 +102,13 @@
   "contraseña": "$2a$10$URlqK79FkyoNfHKn0gv2XO/zgEP5g965XRRtK/ZW57p9rpbSsab7.",
   "fecha": "",
   "id": 13
+ },
+ {
+  "nombre": "agustin",
+  "apellido": "godoy",
+  "email": "agustingod@gmail.com",
+  "contraseña": "$2a$10$ghyeXojUOBcbIc8vBQUoE.aTiKkkuUGwq5i4i2Kgm4zOHDx/QU3Jq",
+  "fecha": "1998-01-06",
+  "id": 14
  }
 ]
