@@ -73,7 +73,8 @@ const model = function (name) {
                 return row.id != id;
             });
             this.writeFile(updatedRows);
-        }
+        },
+        
     }
 }
 

@@ -26,7 +26,7 @@ app.set('views', path.join(__dirname, '/src/views'));
 //MIDDLEWARES
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(session({secret: 'session', saveUninitialized: true, resave: false}));
+app.use(session({secret: 'maktamo', saveUninitialized: true, resave: false}));
 app.use(cookie())
 
 

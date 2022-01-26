@@ -4,8 +4,8 @@ const router = express.Router();
 const { body } = require('express-validator')
 
 const validationsLogin = [
-    body('correo').notEmpty().isEmail().withMessage('Debes ingresar un correo electrónico válido'),
-    body('contra').notEmpty().withMessage('Debes ingresar una contraseña')
+    body('email').notEmpty().isEmail().withMessage('Debes ingresar un correo electrónico válido'),
+    body('password').isLength({min: 8}).withMessage('Debes ingresar una contraseña de mínimo 8 carácteres')
 ]
 
 
