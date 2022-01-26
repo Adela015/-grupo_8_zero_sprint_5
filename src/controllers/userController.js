@@ -24,6 +24,18 @@ const userController = {
         productModel.create(usuario);
         res.redirect('/')
     },
+    processRegister:(req, res) =>{
+        const result = validationResult(req)
+        if (result.errors.length > 0) {
+            return res.render('register', {
+                errors: result.mapped(),
+                oldData: req.body
+            });
+            
+        }
+        res.send('')
+        
+    },
     
     login:(req,res) => {
         res.render('login');

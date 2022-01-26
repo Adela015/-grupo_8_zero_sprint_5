@@ -23,52 +23,75 @@
 
 <div class="container">
     <div class="row">
+
         <div class="card">
             <section id="section-form">
                 <!-- <h1 class="titulo">REGISTRATE</h1> -->
                 <div class="lineaRosa"></div> 
                 <br>
-            <form class="form-register" action="/user/register" method="post">                                 
+            <form class="form-register" action="/user/register" method="post" >                                 
                     <div class="espacioRegister">
                         <label for="nombre" class="label-registro">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" class="field left" >
+                        <input type="text" 
+                        name="nombre" 
+                        id="nombre" 
+                        placeholder="Ingrese su nombre" 
+                        class="field <%= locals.errors && errors.nombre ? 'is-invalid' : null %>"
+                        value="<%= locals.oldData ? oldData.nombre : null %> ">
+                        
+                        <% if (locals.errors && errors.nombre) { %>
+                            <div class="error">
+                                <%= errors.nombre.msg  %> 
+                            </div>                      
+                        <% } %>
                     </div>
 
                     <div class="espacioRegister">
                         <label for="apellido" class="label-registro">Apellido:</label>
-                        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" class="field" >
+                        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" 
+                        class="field <%= locals.errors && errors.apellido ? 'is-invalid' : null %>" 
+                        value="<%= locals.oldData ? oldData.apellido : null %> ">
+                        <% if (locals.errors && errors.apellido) { %>
+                            <div class="error">
+                                <%= errors.apellido.msg  %> 
+                            </div>                      
+                        <% } %>
                     </div>
 
                     <div class="espacioRegister">
                         <label for="email" class="label-registro">E-mail:</label>
-                        <input type="email" name="email" id="email" placeholder="example@mail.com" class="field" >
+                        <input type="email" name="email" id="email" placeholder="example@mail.com" 
+                        class="field <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+                        value="<%= locals.oldData ? oldData.email : null %> ">
+                        <% if (locals.errors && errors.email) { %>
+                            <div class="error">
+                                <%= errors.email.msg  %> 
+                            </div>                      
+                        <% } %>
                     </div>
-
-                    <!-- <div class="espacioRegister">
-                        <label for="confirmarEmail" class="label-registro">Repita su e-mail:</label>
-                        <input type="email" name="confirmarEmail" id="confirmarEmail" placeholder="example@mail.com" class="field rigth">
-                    </div> -->
 
                     <div class="espacioRegister">
                         <label for="contraseña" class="label-registro">Contraseña:</label>
-                        <input type="password" name="contraseña" id="contraseña" minlength="8" maxlength="20" placeholder="Ingrese una contraseña válida" class="field left">
+                        <input type="password" name="contraseña" id="contraseña"  placeholder="Ingrese una contraseña válida"
+                        class="field left <%= locals.errors && errors.contraseña ? 'is-invalid' : null %>"
+                        value="<%= locals.oldData ? oldData.constraseña : null %> " >
+                        <% if (locals.errors && errors.contraseña) { %>
+                            <div class="error">
+                                <%= errors.contraseña.msg%> 
+                            </div>                      
+                        <% } %>
                     </div>
-
-                    <!-- <div class="espacioRegister">
-                        <label for="repetirContraseña" class="label-registro">Repita su contraseña:</label>
-                        <input type="password" name="repetirContraseña" id="repetirContraseña" minlength="8" maxlength="20" placeholder="Confirme su contraseña" class="field rigth">
-                    </div> -->
 
                     <div class="espacioRegister">
                         <label for="text" class="label-registro">Fecha de nacimiento:</label>
-                        <input type="date" name="fecha" value="DD-MM-AA" class="calendario">
+                        <input type="date" name="fecha" value="DD-MM-AA" class="calendario" >
                     </div>
 
                     <div class="espacioChecbox">
                         <input type="checkbox" name="promociones">
                         <label for="promociones">Deseo recibir novedades sobre productos y promociones</label>
                         <br>
-                        <input type="checkbox" name="terminos" >
+                        <input type="checkbox" name="terminos"  >
                         <label for="terminos">Acepto los términos y condiciones</label>
                     </div>
 
