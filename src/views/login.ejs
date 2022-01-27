@@ -30,14 +30,13 @@
                 <h1 class="titulo">INICIÁ SESIÓN</h1>
                 <div class="lineaRosa"></div>
 
-                <% if (locals.errors && errors.email){ 
-                    errors.forEach(error=> { %>
-                    <p class="error"> <%= error.email.msg %> </p>
-                <%    })
-                } %>
+                <% if (locals.errors && errors.email){ %>
+                    <p class="error"> <%= errors.email.msg %> </p>
+                <% } %>
+
                 <% if(locals.errors && errors.contraseña){ %> 
-                    <p class="error"> <%= errors.password.msg %> </p>
-                <% } %> 
+                    <p class="error"> <%= errors.contraseña.msg %> </p>
+                <% } %>
 
                 <form action="/user/login" method="POST" id="form">
                     

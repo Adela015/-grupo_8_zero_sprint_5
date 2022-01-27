@@ -31,17 +31,29 @@
             <form class="form-register" action="/user/register" method="post">                                 
                     <div class="espacioRegister">
                         <label for="nombre" class="label-registro">Nombre:</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" class="field left" >
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" class="field left" > 
+                        <% if (locals.errors && errors.nombre) %> 
+                        <p class="error"><%= errors.nombre.msg %></p>
+                        <% } %>
+
                     </div>
 
                     <div class="espacioRegister">
                         <label for="apellido" class="label-registro">Apellido:</label>
                         <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" class="field" >
+                        <% if (locals.errors && errors.apellido) %> 
+                        <p class="error"><%= errors.apellido.msg %></p>
+                        <% } %>
+
                     </div>
 
                     <div class="espacioRegister">
                         <label for="email" class="label-registro">E-mail:</label>
                         <input type="email" name="email" id="email" placeholder="example@mail.com" class="field" >
+                        <% if (locals.errors && errors.email) %> 
+                        <p class="error"><%= errors.email.msg %></p>
+                        <% } %>
+
                     </div>
 
                     <!-- <div class="espacioRegister">
@@ -52,6 +64,10 @@
                     <div class="espacioRegister">
                         <label for="contraseña" class="label-registro">Contraseña:</label>
                         <input type="password" name="password" id="password" minlength="8" maxlength="20" placeholder="Ingrese una contraseña válida" class="field left">
+                        <% if (locals.errors && errors.contraseña) %> 
+                        <p class="error"><%= errors.password.msg %></p>
+                        <% } %>
+
                     </div>
 
                     <!-- <div class="espacioRegister">
@@ -83,7 +99,6 @@
         </div>
     </div>
 </div>
-
 
 
 

@@ -14,16 +14,38 @@ const userController = {
         res.render('register')
     },
     create: (req,res)=>{
+
+        const result = validationResult(req)
+        if (result.errors.length > 0) {
+            return res.render('/register', {
+                errors: result.mapped(),
+                oldData: req.body
+            });
+            
+        }
+        
+        let userInDb = productModel.findField('email', req.body.email)
+
+        if(userInDb) {
+            return res.render('/register', {
+                errors: {email:{
+                    msg: 'Este correo ya está registrado'
+                }},
+                oldData: req.body
+            })
+        }
+
         let usuario = {
             nombre: req.body.nombre,
             apellido: req.body.apellido,
             email: req.body.email,
-            contraseña: bcrypt.hashSync(req.body.contraseña),
+            contraseña: bcrypt.hashSync(req.body.password),
             fecha: req.body.fecha
         }
         productModel.create(usuario);
         res.redirect('/')
     },
+
     
     login:(req,res) => {
         res.render('login');
@@ -31,7 +53,7 @@ const userController = {
     
     access: (req,res) =>{
 
-        let users = productModel.findField('email', req.body);
+        let users = productModel.findField('email', req.body.email);
 
         if (users){
             let confirm = bcrypt.compareSync(req.body.password, users.password)
