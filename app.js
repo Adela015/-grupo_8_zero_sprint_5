@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const mainController = require('./src/controllers/mainController');
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
 const session = require('express-session');
 const cookie = require('cookie-parser');
 
@@ -27,7 +28,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(session({secret: 'maktamo', saveUninitialized: true, resave: false}));
 app.use(cookie());
-
+app.use(userLoggedMiddleware);
 
 
 //METHOD OVERRIDE

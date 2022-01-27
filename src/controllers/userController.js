@@ -80,6 +80,11 @@ const userController = {
                 email: { msg: 'Por favor, ingresá un email válido'},
             },
         })
+    },
+    logout: (req, res) => {
+        res.clearCookie('userEmail')
+        req.session.destroy()
+        return res.redirect('/')
     }
 }
 
