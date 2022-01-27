@@ -9,7 +9,6 @@ const cookie = require('cookie-parser');
 
 const port = 3000;
 
-//const multer = require('multer')
 
 //RUTAS
 const mainRutas = require('./src/routers/mainRouter');
@@ -27,7 +26,7 @@ app.set('views', path.join(__dirname, '/src/views'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(session({secret: 'maktamo', saveUninitialized: true, resave: false}));
-app.use(cookie())
+app.use(cookie());
 
 
 
