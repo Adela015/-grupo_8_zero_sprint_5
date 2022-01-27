@@ -39,9 +39,10 @@ const userController = {
             nombre: req.body.nombre,
             apellido: req.body.apellido,
             email: req.body.email,
-            contraseña: bcrypt.hashSync(req.body.password),
+            contraseña: bcrypt.hashSync(req.body.contraseña, 10),
             fecha: req.body.fecha
         }
+        console.log(usuario);
         productModel.create(usuario);
         res.redirect('/')
     },
@@ -56,9 +57,9 @@ const userController = {
         let users = productModel.findField('email', req.body.email);
 
         if (users){
-            let confirm = bcrypt.compareSync(req.body.password, users.password)
+            let confirm = bcrypt.compareSync(req.body.contraseña, users.contraseña)
             if(confirm){
-                delete users.password
+                delete users.contraseña
                 req.session.userLogged = users
 
                 if(req.body.remember){
@@ -66,15 +67,15 @@ const userController = {
                 }
                 return res.redirect('/')
             }
-            return res.render('user/login',{
-                error: {
-                    password: {
+            return res.render('login',{
+                errors: {
+                    contraseña: {
                         msg: 'La contraseña no es válida'
                     }
                 }
             })
         }
-        return res.render('user/login',{
+        return res.render('login',{
             errors: { 
                 email: { msg: 'Por favor, ingresá un email válido'},
             },
