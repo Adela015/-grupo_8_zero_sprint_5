@@ -1,12 +1,12 @@
 const jsonDB = require('../model/jsonDatabase');
-const usersModel = jsonDB('users');
+const productModel = jsonDB('user');
 
 
 function userLoggedMiddleware(req, res, next) {
     res.locals.isLogged = false
 
     let emailsInCookie = req.cookies.userEmail
-    let userFromCoike = usersModel.findField('email',emailsInCookie);
+    let userFromCoike = productModel.findField('email',emailsInCookie);
 
     if(userFromCoike){
         req.session.userLogged = userFromCoike

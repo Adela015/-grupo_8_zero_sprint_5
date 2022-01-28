@@ -86,5 +86,77 @@
   "contraseña": "$2a$10$Sw21A4c8aIQH7s03Va/afu/VTFem.gqI5j1j2FmMv9WLiCfFR2Dc.",
   "fecha": "2021-08-25",
   "id": 11
+ },
+ {
+  "nombre": "Gary",
+  "apellido": "Rodriguez",
+  "email": "garyrodriguez361@gmail.com",
+  "contraseña": "$2a$10$vVljXh1K.IAXoc56XXNyv.tmCUwR0Xz9.U/2Q10KcrbBKbZt3Hr0q",
+  "fecha": "",
+  "id": 12
+ },
+ {
+  "nombre": "Gary",
+  "apellido": "Rodriguez",
+  "email": "garyrodriguez361@gmail.com",
+  "contraseña": "$2a$10$TxxUFfTU1t7jkWiquIomNeMULmMpmdI3k2BlEQVDdwYCL7LbOn6uC",
+  "fecha": "2021-12-28",
+  "id": 13
+ },
+ {
+  "nombre": "",
+  "apellido": "",
+  "email": "",
+  "contraseña": "$2a$10$k9BeXyH/5ImytHn0stYjzumCAHGHmTJ27AjRQwGfavDlpw6Uk7Yti",
+  "fecha": "",
+  "id": 14
+ },
+ {
+  "nombre": "Gary",
+  "apellido": "Rodriguez",
+  "email": "garyrodriguez361@gmail.com",
+  "contraseña": "$2a$10$tvBahggw7M.wQQayVnY4hOAMotbdMbB3.NmTTX.JOHKIJLGHWOxFy",
+  "fecha": "2022-01-05",
+  "id": 15
+ },
+ {
+  "nombre": "Gary",
+  "apellido": "Rodriguez",
+  "email": "garyrodriguez@gmail.com",
+  "contraseña": "$2a$10$rMjb23AFczwQMTmrquMGX.2CIw0tQwjktJ14QVxwqx/crflVmsmUy",
+  "fecha": "2021-12-29",
+  "id": 16
+ },
+ {
+  "nombre": "Gary",
+  "apellido": "Rodriguez",
+  "email": "gary@gmail.com",
+  "contraseña": "$2a$10$H2HpR/SjfhTrYuPuUOUUP.ygfbEtN7Nwu6C5.0yHfSiZohTajQIKq",
+  "fecha": "",
+  "id": 17
+ },
+ {
+  "nombre": "Gary",
+  "apellido": "Rodriguez",
+  "email": "garyrodriguez361@gmail.com",
+  "contraseña": "$2a$10$0u4t.aW3yjHSMo8fPrl2JOqmvHtLskT5D9efJiUBRjTFxVfu91DuO",
+  "fecha": "",
+  "id": 18
+ },
+ {
+  "nombre": "",
+  "apellido": "",
+  "email": "",
+  "contraseña": "$2a$10$rtpsklyzyw5oU.0fRy1YzO99D2l7iomTrppLM2g/mHygaSY9HJ4Wa",
+  "fecha": "",
+  "id": 19
+ },
+ {
+  "nombre": "",
+  "apellido": "",
+  "email": "",
+  "contraseña": "$2a$10$7PnlRSbZAv0aZGtgOPJGb.OyjXXz6vhYXcDzLhYjP4dwY45CskI/a",
+  "fecha": "",
+  "id": 20
  }
 ]

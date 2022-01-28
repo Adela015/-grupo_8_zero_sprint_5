@@ -2,8 +2,9 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const methodOverride  = require("method-override");
 const mainController = require('./src/controllers/mainController');
-const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware')
+const userLoggedMiddleware = require('./src/middlewares/userLoggedMiddleware');
 const session = require('express-session');
 const cookie = require('cookie-parser');
 
@@ -32,7 +33,6 @@ app.use(userLoggedMiddleware);
 
 
 //METHOD OVERRIDE
-const methodOverride  = require("method-override");
 app.use(methodOverride("_method"));
 
 

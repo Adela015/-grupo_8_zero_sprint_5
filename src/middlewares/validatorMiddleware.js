@@ -3,6 +3,8 @@ const path = require('path')
 const validaciones = [
     body('nombre')
         .notEmpty().withMessage("Debes completar con un nombre"),
+    body('apellido')
+        .notEmpty().withMessage("Debes completar con un apellido"),
     body('email')
         .notEmpty().withMessage("Debes completar con un email")
         .isEmail().withMessage("Debes ingresar un email válido"),
