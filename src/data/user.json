@@ -144,19 +144,31 @@
   "id": 18
  },
  {
-  "nombre": "",
-  "apellido": "",
-  "email": "",
-  "contraseña": "$2a$10$rtpsklyzyw5oU.0fRy1YzO99D2l7iomTrppLM2g/mHygaSY9HJ4Wa",
-  "fecha": "",
+  "nombre": "Limberth",
+  "apellido": "Entrada",
+  "email": "limberth@gmail.com",
+  "contraseña": "123456789",
+  "fecha": "2022-01-13",
+  "terminos": "on",
+  "password": "$2a$10$cbdddAg4Mxdk5UeZE9TP0.gs25Zg5EyccdZqdioyVgs6qRwAC7i1S",
   "id": 19
  },
  {
-  "nombre": "",
-  "apellido": "",
-  "email": "",
-  "contraseña": "$2a$10$7PnlRSbZAv0aZGtgOPJGb.OyjXXz6vhYXcDzLhYjP4dwY45CskI/a",
-  "fecha": "",
+  "nombre": "Miky",
+  "apellido": "Gato",
+  "email": "gato@gmail.com",
+  "contraseña": "$2a$10$C3Z5SCfN2WbYMcdSUK31PuwaieupF.qpT8ypTseYEa..kBvm7SYcm",
+  "fecha": "2022-01-10",
+  "terminos": "on",
   "id": 20
+ },
+ {
+  "nombre": "Agustín",
+  "apellido": "Godoy",
+  "email": "agustingod@gmail.com",
+  "contraseña": "$2a$10$AzgXRq04KbX/Njft3mx7X.XZ.GPuC/YYd4.DGO5JNnlZQlTBM9Ln6",
+  "fecha": "1998-01-06",
+  "terminos": "on",
+  "id": 21
  }
 ]

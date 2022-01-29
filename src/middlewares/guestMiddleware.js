@@ -5,4 +5,4 @@ function guestMiddleware(req, res, next) {
     next()
 }
 
-module.exports = guestMiddleware
+module.exports = guestMiddleware;

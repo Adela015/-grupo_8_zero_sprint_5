@@ -4,8 +4,8 @@
   "name": "I'm Home",
   "artist": "Minho",
   "description": "Primer mini albúm de Minho",
-  "price": 10000,
-  "image": "img-1641277373286.jpg"
+  "price": 20000,
+  "image": "img-1643385494240.jpg"
  },
  {
   "name": "Planet Her",
@@ -29,17 +29,8 @@
   "name": "We play",
   "artist": "Weeekly",
   "description": "Album de Weeekly",
-  "price": 7700,
-  "image": "img-1641277130121.jpg"
- },
- {
-  "name": "Saturation",
-  "artist": "Brockhampton",
-  "description": "Primer álbum de la trilogía SATURATION",
-  "price": 2000,
-  "image": "img-1641272192170.png",
-  "category": "cd",
-  "id": 6
+  "price": 15000,
+  "image": "img-1643420851769.jpg"
  },
  {
   "name": "Saturation II",
@@ -57,5 +48,23 @@
   "price": 2000,
   "image": "img-1641272860894.jpg",
   "id": 8
+ },
+ {
+  "name": "1of1",
+  "artist": "SHINee",
+  "genre": "kpop",
+  "description": "5th Album de SHINee",
+  "price": 27000,
+  "image": "img-1643385574023.jpg",
+  "id": 9
+ },
+ {
+  "name": "From Now On",
+  "artist": "SHINee",
+  "genre": "kpop",
+  "description": "Album japonés",
+  "price": 23005,
+  "image": "img-1643419593152.jpg",
+  "id": 10
  }
 ]
