@@ -72,6 +72,12 @@ i.fa-user-circle{
     font-size: 40px;
 }
 
+i.fa-address-card{
+    position: relative;
+    left: -15%;
+    font-size: 40px;
+}
+
 .search-bar{
     display: none;
 }
@@ -448,6 +454,12 @@ div.social-media{
         margin: 0px 15px;
     }
 
+    .fa-address-card{
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px;
+    }
+
     .fa-shopping-cart{
         color: white;
         font-size: 30px;
@@ -572,6 +584,18 @@ div.social-media{
         transition-property: all;
         transition-duration: 200ms;
     }
+
+    .fa-address-card{
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px;
+        transition: all 200ms;
+    }
+
+    .fa-address-card:hover{
+        color: #e0218a;
+    }
+
     /*------------------CARDS---------------*/
     
     div section.mas-vendidos{

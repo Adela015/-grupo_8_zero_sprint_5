@@ -154,21 +154,12 @@
   "id": 19
  },
  {
-  "nombre": "Miky",
-  "apellido": "Gato",
-  "email": "gato@gmail.com",
-  "contraseña": "$2a$10$C3Z5SCfN2WbYMcdSUK31PuwaieupF.qpT8ypTseYEa..kBvm7SYcm",
-  "fecha": "2022-01-10",
-  "terminos": "on",
-  "id": 20
- },
- {
   "nombre": "Agustín",
   "apellido": "Godoy",
   "email": "agustingod@gmail.com",
   "contraseña": "$2a$10$AzgXRq04KbX/Njft3mx7X.XZ.GPuC/YYd4.DGO5JNnlZQlTBM9Ln6",
   "fecha": "1998-01-06",
   "terminos": "on",
-  "id": 21
+  "id": 20
  }
 ]

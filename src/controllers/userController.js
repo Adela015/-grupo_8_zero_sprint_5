@@ -16,23 +16,56 @@ const userController = {
 
     create: (req,res)=>{
 
-        const errores = validationResult(req)
-        if (errores.errors.length > 0) {
-            return res.render('register', {
-                id: 0,
-                errors: errores.mapped(),
-                oldData: req.body
-            });
+        // const errores = validationResult(req)
+        // if (errores.errors.length > 0) {
+        //     return res.render('register', {
+        //         id: 0,
+        //         errors: errores.mapped(),
+        //         oldData: req.body
+        //     });
             
-        }        
-        let usuarioCrear = {
-            ...req.body,
-            contraseña: bcrypt.hashSync(req.body.contraseña,10),           
-        }
+        // }        
+        // let usuarioCrear = {
+        //     ...req.body,
+        //     contraseña: bcrypt.hashSync(req.body.contraseña,10),
+        //     isAdmin: String(req.body.email).includes('@zero.com')
+        // }
 
-        console.log(req.body);
-        productModel.create(usuarioCrear);
-        return res.redirect('/user/login');
+        // console.log(req.body);
+        // productModel.create(usuarioCrear);
+        // return res.redirect('/user/login');
+
+            const errores = validationResult(req)
+            if (errores.errors.length > 0) {
+                return res.render('register', {
+                    errors: errores.mapped(),
+                    oldData: req.body
+                });
+                
+            }
+            
+            let userInDb = productModel.findField('email', req.body.email)
+    
+            if(userInDb) {
+                return res.render('register', {
+                    errors: {
+                        email:{
+                            msg: 'Este correo ya está registrado'
+                        }
+                    },
+                    oldData: req.body
+                })
+            }
+    
+            let usuario = {
+                ...req.body,
+                contraseña: bcrypt.hashSync(req.body.contraseña, 10),
+                isAdmin: String(req.body.email).includes('@zero.com')
+            }
+    
+            console.log(usuario);
+            productModel.create(usuario);
+            res.redirect('login')
     },
 
     login:(req,res) => {

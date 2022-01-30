@@ -69,6 +69,12 @@ i.fa-user-circle{
     transition: all 200ms
 }
 
+i.fa-address-card{
+    position: relative;
+    left: -15%;
+    font-size: 40px;
+}
+
 .search-bar{
     display: none;
 }
@@ -327,6 +333,12 @@ div.social-media{
         margin: 0px 15px;
     }
 
+    .fa-address-card{
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px;
+    }
+
     .fa-shopping-cart{
         color: white;
         font-size: 30px;
@@ -449,6 +461,17 @@ div.social-media{
     .fa-user-circle:hover{
         color: #e0218a;
         transition: all 200ms
+    }
+
+    .fa-address-card{
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px;
+        transition: all 200ms;
+    }
+
+    .fa-address-card:hover{
+        color: #e0218a;
     }
 
     div h1{
