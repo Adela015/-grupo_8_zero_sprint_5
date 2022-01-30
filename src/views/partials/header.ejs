@@ -23,10 +23,12 @@
         </div> -->
 
         <% if (locals.isLogged) { %>
+            <a href="/products/productCart"><i class="fas fa-shopping-cart"></i></a>
+            <a href="/products/wishList"><i class="fas fa-heart" id="heart"></i></a>
             <a href="/user/login"><i class="fas fa-user-circle"></i></a>
+            <a href="/user/logout"><i class="fas fa-sign-out-alt"></i></a>
             <% if (locals.isLogged && locals.userLogged.isAdmin) { %>
                 <a href="/products/productAdd">Crear</a>
-                <a href="/products/productCart"><i class="fas fa-shopping-cart"></i></a> 
             <% } %>
         <% } else { %>
             <a href="/user/login"><i class="fas fa-user-circle"></i></a>

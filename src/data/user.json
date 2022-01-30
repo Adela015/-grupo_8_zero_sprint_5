@@ -161,5 +161,16 @@
   "fecha": "1998-01-06",
   "terminos": "on",
   "id": 20
+ },
+ {
+  "nombre": "Adela",
+  "apellido": "Cervantes Ortiz",
+  "email": "adela@gmail.com",
+  "contraseña": "$2a$10$.eOCDczazEAm.KTaMNZeF.hdaxkhynthkBOgLjixwQdNylrXsR4Ju",
+  "fecha": "2000-01-07",
+  "promociones": "on",
+  "terminos": "on",
+  "isAdmin": false,
+  "id": 21
  }
 ]

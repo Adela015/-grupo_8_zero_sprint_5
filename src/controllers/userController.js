@@ -16,25 +16,6 @@ const userController = {
 
     create: (req,res)=>{
 
-        // const errores = validationResult(req)
-        // if (errores.errors.length > 0) {
-        //     return res.render('register', {
-        //         id: 0,
-        //         errors: errores.mapped(),
-        //         oldData: req.body
-        //     });
-            
-        // }        
-        // let usuarioCrear = {
-        //     ...req.body,
-        //     contraseña: bcrypt.hashSync(req.body.contraseña,10),
-        //     isAdmin: String(req.body.email).includes('@zero.com')
-        // }
-
-        // console.log(req.body);
-        // productModel.create(usuarioCrear);
-        // return res.redirect('/user/login');
-
             const errores = validationResult(req)
             if (errores.errors.length > 0) {
                 return res.render('register', {
@@ -43,9 +24,8 @@ const userController = {
                 });
                 
             }
-            
-            let userInDb = productModel.findField('email', req.body.email)
-    
+            let userInDb = productModel.findField('email', req.body.email);
+
             if(userInDb) {
                 return res.render('register', {
                     errors: {
@@ -55,14 +35,13 @@ const userController = {
                     },
                     oldData: req.body
                 })
-            }
-    
+            };
+
             let usuario = {
                 ...req.body,
                 contraseña: bcrypt.hashSync(req.body.contraseña, 10),
                 isAdmin: String(req.body.email).includes('@zero.com')
-            }
-    
+            };
             console.log(usuario);
             productModel.create(usuario);
             res.redirect('login')
@@ -71,17 +50,14 @@ const userController = {
     login:(req,res) => {
         res.render('login');
     },
-    
     access: (req,res) =>{
 
         let users = productModel.findField('email', req.body.email);
-
         if (users){
             let confirm = bcrypt.compareSync(req.body.contraseña, users.contraseña)
             if(confirm){
                 delete users.contraseña
                 req.session.userLogged = users
-
                 if(req.body.remember){
                     res.cookie('email', req.body.email, {maxAge: 1000*60*60})
                 }
@@ -94,7 +70,7 @@ const userController = {
                     }
                 }
             })
-        }
+        };
         return res.render('login',{
             errors: { 
                 email: { msg: 'Por favor, ingresá un email válido'},

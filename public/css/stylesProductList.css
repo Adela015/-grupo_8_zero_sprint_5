@@ -78,6 +78,26 @@ i.fa-address-card{
     font-size: 40px;
 }
 
+i.fa-sign-out-alt{
+    position: relative;
+    left: 5%;
+    font-size: 40px;
+}
+
+#heart{
+    position: relative;
+    left: 10%;
+    font-size: 30px;
+}
+
+#heart{
+    color: white;
+}
+
+#heart:hover{
+    color: #e0218a;
+}
+
 .search-bar{
     display: none;
 }
@@ -460,6 +480,12 @@ div.social-media{
         margin: 0px 15px;
     }
 
+    .fa-sign-out-alt{
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px;
+    }
+
     .fa-shopping-cart{
         color: white;
         font-size: 30px;
@@ -593,6 +619,28 @@ div.social-media{
     }
 
     .fa-address-card:hover{
+        color: #e0218a;
+    }
+
+    .fa-sign-out-alt{
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px;
+        transition: all 200ms;
+    }
+
+    .fa-sign-out-alt:hover{
+        color: #e0218a;
+    }
+
+    .fa-shopping-cart{
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px;
+        transition: all 200ms;
+    }
+
+    .fa-shopping-cart:hover{
         color: #e0218a;
     }
 
