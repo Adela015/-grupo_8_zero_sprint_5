@@ -83,10 +83,23 @@
             <h5 class="album-title"><%=producto.name%></h5>
             <h5 class="album-title2"><%=producto.artist%></h5>
             <h5 class="album-title2"><%=producto.category%> </h5>
-            <p class="album-price"> $ <%=mil(producto.price)%><a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
-            <div>
-                <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
-            </div>
+            <% if (locals.isLogged) { %>
+                <p class="album-price"> $ <%=mil(producto.price)%><a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+                <div>
+                    <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+                </div>
+                <% if (locals.isLogged && locals.userLogged.isAdmin) { %>
+                    <p class="album-price"> $ <%=mil(producto.price)%><a href="/products/wishList"><i class="fas fa-heart"></i></a></p>
+                    <div>
+                        <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
+                    </div>
+                <% } %>
+            <% } else { %>
+                <p class="album-price"> $ <%=mil(producto.price)%><a href="/user/login"><i class="fas fa-heart"></i></a></p>
+                <div>
+                    <button type="submit" class="boton-carrito"> <a href="/user/login"> Agregar al carrito</a></button>
+                </div>
+                <% } %>
         </article>
     </section>
     <%} %> 
@@ -104,9 +117,9 @@
 
 <!---------------------------AGREGAR O EDITAR PRODUCTOS--------------------------------->
 
-<div class="contenedor-addproduct">
+<!-- <div class="contenedor-addproduct">
     <a class="addproduct" href="/products/productAdd">Agregar producto</a>
-</div>
+</div> -->
 
 <!---------------------------------------FOOTER----------------------------------------->
 

@@ -1,166 +1,12 @@
 [
  {
-  "nombre": "Alexia",
-  "apellido": "Coppola",
-  "email": "alex@gmail.com",
-  "contraseña": "12510961390",
-  "fecha": "2001-03-05",
-  "id": 1
- },
- {
-  "nombre": "Agustín",
-  "apellido": "Godoy",
-  "email": "agus@gmail.com",
-  "contraseña": "12345678",
-  "fecha": "1998-01-06",
-  "id": 2
- },
- {
-  "nombre": "Nicolás",
-  "apellido": "Tolaba",
-  "email": "nico@gmail.com",
-  "contraseña": "12345678",
-  "fecha": "2003-06-06",
-  "id": 3
- },
- {
-  "nombre": "Gala",
-  "apellido": "Cabrera",
-  "email": "gali@gmail.com",
-  "contraseña": "galula12",
-  "fecha": "2004-03-19",
-  "id": 4
- },
- {
-  "nombre": "Zoe ",
-  "apellido": "Mia",
-  "email": "zoee@gmail.com",
-  "contraseña": "12345678",
-  "fecha": "2002-11-25",
-  "id": 5
- },
- {
-  "nombre": "Juan",
-  "apellido": "Perez",
-  "email": "juanip@gmail.com",
-  "contraseña": "imaginacionnula",
-  "fecha": "2002-01-01",
-  "id": 6
- },
- {
-  "nombre": "Pauli",
-  "apellido": "Gonzalez C",
-  "email": "paucabrerita3@gmail.com",
-  "contraseña": "2468101214",
-  "fecha": "2002-11-08",
-  "id": 7
- },
- {
-  "nombre": "",
-  "apellido": "",
-  "email": "",
-  "contraseña": "Xs8ixXKKUF6pXXj",
-  "fecha": "",
-  "id": 8
- },
- {
-  "nombre": "",
-  "apellido": "",
-  "email": "",
-  "contraseña": "Xs8ixXKKUF6pXXj",
-  "fecha": "",
-  "id": 9
- },
- {
-  "nombre": "prueba",
-  "apellido": "pruebita",
-  "email": "prueba@gmail.com",
-  "contraseña": "$2a$10$1NUtjdfqBbfVHkeVpt6jGu9LInrQ8Vnf1BeyK5jjcAVux6BQtbrBS",
-  "fecha": "2022-01-11",
-  "id": 10
- },
- {
-  "nombre": "Paulina",
-  "apellido": "Cabrera",
-  "email": "paucab@gmail.com",
-  "contraseña": "$2a$10$Sw21A4c8aIQH7s03Va/afu/VTFem.gqI5j1j2FmMv9WLiCfFR2Dc.",
-  "fecha": "2021-08-25",
-  "id": 11
- },
- {
-  "nombre": "Gary",
-  "apellido": "Rodriguez",
-  "email": "garyrodriguez361@gmail.com",
-  "contraseña": "$2a$10$vVljXh1K.IAXoc56XXNyv.tmCUwR0Xz9.U/2Q10KcrbBKbZt3Hr0q",
-  "fecha": "",
-  "id": 12
- },
- {
-  "nombre": "Gary",
-  "apellido": "Rodriguez",
-  "email": "garyrodriguez361@gmail.com",
-  "contraseña": "$2a$10$TxxUFfTU1t7jkWiquIomNeMULmMpmdI3k2BlEQVDdwYCL7LbOn6uC",
-  "fecha": "2021-12-28",
-  "id": 13
- },
- {
-  "nombre": "",
-  "apellido": "",
-  "email": "",
-  "contraseña": "$2a$10$k9BeXyH/5ImytHn0stYjzumCAHGHmTJ27AjRQwGfavDlpw6Uk7Yti",
-  "fecha": "",
-  "id": 14
- },
- {
-  "nombre": "Gary",
-  "apellido": "Rodriguez",
-  "email": "garyrodriguez361@gmail.com",
-  "contraseña": "$2a$10$tvBahggw7M.wQQayVnY4hOAMotbdMbB3.NmTTX.JOHKIJLGHWOxFy",
-  "fecha": "2022-01-05",
-  "id": 15
- },
- {
-  "nombre": "Gary",
-  "apellido": "Rodriguez",
-  "email": "garyrodriguez@gmail.com",
-  "contraseña": "$2a$10$rMjb23AFczwQMTmrquMGX.2CIw0tQwjktJ14QVxwqx/crflVmsmUy",
-  "fecha": "2021-12-29",
-  "id": 16
- },
- {
-  "nombre": "Gary",
-  "apellido": "Rodriguez",
-  "email": "gary@gmail.com",
-  "contraseña": "$2a$10$H2HpR/SjfhTrYuPuUOUUP.ygfbEtN7Nwu6C5.0yHfSiZohTajQIKq",
-  "fecha": "",
-  "id": 17
- },
- {
-  "nombre": "Gary",
-  "apellido": "Rodriguez",
-  "email": "garyrodriguez361@gmail.com",
-  "contraseña": "$2a$10$0u4t.aW3yjHSMo8fPrl2JOqmvHtLskT5D9efJiUBRjTFxVfu91DuO",
-  "fecha": "",
-  "id": 18
- },
- {
-  "nombre": "Limberth",
-  "apellido": "Entrada",
-  "email": "limberth@gmail.com",
-  "contraseña": "123456789",
-  "fecha": "2022-01-13",
-  "terminos": "on",
-  "password": "$2a$10$cbdddAg4Mxdk5UeZE9TP0.gs25Zg5EyccdZqdioyVgs6qRwAC7i1S",
-  "id": 19
- },
- {
   "nombre": "Agustín",
   "apellido": "Godoy",
   "email": "agustingod@gmail.com",
   "contraseña": "$2a$10$AzgXRq04KbX/Njft3mx7X.XZ.GPuC/YYd4.DGO5JNnlZQlTBM9Ln6",
   "fecha": "1998-01-06",
   "terminos": "on",
-  "id": 20
+  "id": 1
  },
  {
   "nombre": "Adela",
@@ -171,6 +17,109 @@
   "promociones": "on",
   "terminos": "on",
   "isAdmin": false,
-  "id": 21
+  "id": 2
+ },
+ {
+  "nombre": "Primer",
+  "apellido": "Administrador",
+  "email": "admin@zero.com",
+  "contraseña": "$2a$10$6MJxZy4c1mxKd9ePgCDHj.xzdyLLBm6sYqAEny3JlaG6rjsyJ9ssy",
+  "fecha": "2022-01-05",
+  "terminos": "on",
+  "isAdmin": true,
+  "id": 3
+ },
+ {
+  "nombre": "Gary",
+  "apellido": "Gonzalez",
+  "email": "gary@gmail.com",
+  "contraseña": "$2a$10$F/d3sxZaGPFUaH2.zjQp4uGkaUy57gOkwaxO9rpQABfa7FQJLv7oe",
+  "fecha": "2000-09-26",
+  "terminos": "on",
+  "isAdmin": false,
+  "id": 4
+ },
+ {
+  "nombre": "Limberth",
+  "apellido": "Entrada",
+  "email": "limberth@gmail.com",
+  "contraseña": "$2a$10$zRaJviqyMpmlF0oyqbBlgOhnpLbHKonPb56ycObCgZJpqckSn17qq",
+  "fecha": "2000-03-18",
+  "isAdmin": false,
+  "id": 5
+ },
+ {
+  "nombre": "Juan Ignacio",
+  "apellido": "Sosa",
+  "email": "juan@gmail.com",
+  "contraseña": "$2a$10$tMgYgpUz3AenuEh6WiqJ7Ox228w1U2OdS.3swRsVzL45TC0W5yJea",
+  "fecha": "1997-03-26",
+  "isAdmin": false,
+  "id": 6
+ },
+ {
+  "nombre": "Julian",
+  "apellido": "Torres",
+  "email": "julian@gmail.com",
+  "contraseña": "$2a$10$dyhjzkasJOXewJS08aYlouDhQJ6poDYgQa1PeWJ.5ZZ3ezZ7B82O2",
+  "fecha": "2022-01-12",
+  "isAdmin": false,
+  "id": 7
+ },
+ {
+  "nombre": "Paulina",
+  "apellido": "Cabrera",
+  "email": "paulina@gmail.com",
+  "contraseña": "$2a$10$CSPBlfJkwAUfDiM/P.2D1.YUQd5ZWToiSo6I9f9lECaV6v2bQh.ii",
+  "fecha": "2000-11-09",
+  "promociones": "on",
+  "isAdmin": false,
+  "id": 8
+ },
+ {
+  "nombre": "Adela",
+  "apellido": "Cervantes Ortiz",
+  "email": "adela@zero.com",
+  "contraseña": "$2a$10$bbcQ2jpEMHs.BumXaeMh2eVFD9JOp0iyNO8nUZRUEz14jVmqmBx8G",
+  "fecha": "2000-01-07",
+  "isAdmin": true,
+  "id": 9
+ },
+ {
+  "nombre": "Agustín",
+  "apellido": "Godoy",
+  "email": "agustingod@zero.com",
+  "contraseña": "$2a$10$a.FvzwM7XWuhIUi.1gEFNOHXgdD0940sUATU1rKhiSceFvSk0uEwa",
+  "fecha": "1998-01-06",
+  "isAdmin": true,
+  "id": 10
+ },
+ {
+  "nombre": "Alexia",
+  "apellido": "Coppola",
+  "email": "alexia@zero.com",
+  "contraseña": "$2a$10$yxtqUI.cDIAIBRMabDxHkuqizwnVrAEIzJGLfwMlLWn2xlOYgOj/u",
+  "fecha": "2001-05-05",
+  "isAdmin": true,
+  "id": 11
+ },
+ {
+  "nombre": "Benjamín ",
+  "apellido": "Acuña",
+  "email": "benjamin@zero.com",
+  "contraseña": "$2a$10$VC.NrtGN.0Qw8SNAHORQ.u5eY27NRnfTV1TbmyqV5Ud75RPPGgEbK",
+  "fecha": "2001-01-26",
+  "isAdmin": true,
+  "id": 12
+ },
+ {
+  "nombre": "Paulina",
+  "apellido": "Cabrera",
+  "email": "paulina@zero.com",
+  "contraseña": "$2a$10$qxvocUn8TVwa5Vb/.GK2nuuqTfLTLc7Pd.eE/XhhbdDfGM/8aiuye",
+  "fecha": "2002-11-09",
+  "promociones": "on",
+  "isAdmin": true,
+  "id": 13
  }
 ]

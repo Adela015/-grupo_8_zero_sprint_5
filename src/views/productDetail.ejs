@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/stylesProductDetailAdmin.css">
+    <link rel="stylesheet" href="/css/stylesProductDetail.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -50,18 +50,34 @@
 <!---------------------------------BOTONES---------------------------------->
 
 <div>
-    <button type="submit" id="botton1"><p><i class="fas fa-shopping-cart"></i><a href="/products/productCart" id="contenido"> Agregar al carrito</a></p></button>
+    <!-- <button type="submit" id="botton1"><p><i class="fas fa-shopping-cart"></i><a href="/products/productCart" id="contenido"> Agregar al carrito</a></p></button>
     <br>
     <button type="submit" id="botton2"><p><i class="fas fa-heart" id="heart1"></i><a href="/products/wishList" id="contenido"> Lista de deseos</a></p></button>
     <br>
-    <br>
-    <a href="/products/productEdit/<%= producto.id %>" id="editarBoton">Editar</a>
-    <br>
-    <br>
-    <br>
+    <br> -->
+
+    <% if (locals.isLogged) { %>
+        <button type="submit" id="botton1"><p><i class="fas fa-shopping-cart"></i><a href="/products/productCart" id="contenido"> Agregar al carrito</a></p></button>
+        <br>
+        <button type="submit" id="botton2"><p><i class="fas fa-heart" id="heart1"></i><a href="/products/wishList" id="contenido"> Lista de deseos</a></p></button>
+        <br>
+        <br>
+        <% if (locals.isLogged && locals.userLogged.isAdmin) { %>
+        <a href="/products/productEdit/<%= producto.id %>" id="editarBoton">Editar</a>
+        <br>
+        <br>
+        <br>
         <form action="/products/borrar/<%= producto.id %>?_method=delete" enctype="multipart/form-data" method="POST">
         <input type="submit" value="Borrar" id="botonEliminar">
     </form>
+        <% } %>
+    <% } else { %>
+        <button type="submit" id="botton1"><p><i class="fas fa-shopping-cart"></i><a href="/user/login" id="contenido"> Agregar al carrito</a></p></button>
+        <br>
+        <button type="submit" id="botton2"><p><i class="fas fa-heart" id="heart1"></i><a href="/user/login" id="contenido"> Lista de deseos</a></p></button>
+        <br>
+        <br>
+        <% } %>
 
     <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
         <br>

@@ -75,6 +75,18 @@ i.fa-address-card{
     font-size: 40px;
 }
 
+i.fa-angrycreative{
+    position: relative;
+    right: -40%;
+    font-size: 40px;
+}
+
+.fa-angrycreative{
+    color: white;
+    font-size: 30px;
+    margin: 0px 15px;
+}
+
 i.fa-sign-out-alt{
     position: relative;
     left: 5%;
@@ -457,6 +469,17 @@ div.social-media{
     .fa-user-circle:hover{
         color: #e0218a;
         transition: all 200ms
+    }
+
+    .fa-angrycreative{
+        color: white;
+        font-size: 30px;
+        margin: 0px 15px;
+        transition: all 200ms;
+    }
+
+    .fa-angrycreative:hover{
+        color: #e0218a;
     }
 
     .fa-address-card{

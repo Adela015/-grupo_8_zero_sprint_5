@@ -67,6 +67,12 @@ i.fa-user-circle{
   transition: all 200ms
 }
 
+i.fa-angrycreative{
+  position: relative;
+  right: -40%;
+  font-size: 40px;
+}
+
 i.fa-address-card{
   position: relative;
   left: -15%;
@@ -81,7 +87,7 @@ i.fa-sign-out-alt{
 
 #heart{
   position: relative;
-  left: 10%;
+  left: 30%;
   font-size: 30px;
 }
 
@@ -675,6 +681,12 @@ div.social-media{
       margin: 0px 15px;
   }
 
+  .fa-angrycreative{
+    color: white;
+    font-size: 30px;
+    margin: 0px 15px;
+}
+
   .fa-address-card{
     color: white;
     font-size: 30px;
@@ -810,6 +822,17 @@ div.social-media{
   .fa-user-circle:hover{
       color: #e0218a;
   }
+
+  .fa-angrycreative{
+    color: white;
+    font-size: 30px;
+    margin: 0px 15px;
+    transition: all 200ms;
+}
+
+.fa-angrycreative:hover{
+    color: #e0218a;
+}
 
   .fa-sign-out-alt{
     color: white;
