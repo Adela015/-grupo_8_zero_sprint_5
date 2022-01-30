@@ -11,6 +11,9 @@ const mainController = {
     },
     newsLetter: (req,res) => {
         res.render('newsLetter');
+    },
+    error404: (req,res) => {
+        res.render('error404');
     }
 }
 
