@@ -121,5 +121,15 @@
   "avatar": "1643600929521_img_.jpg",
   "isAdmin": true,
   "id": 13
+ },
+ {
+  "nombre": "Usuario",
+  "apellido": "Comun",
+  "email": "usuario@gmail.com",
+  "contraseña": "$2a$10$CEugRJli9COPzEd03xKXmeruS/4u9e5mGj86.gLwcTN2i9Ftw9vrm",
+  "fecha": "2022-01-13",
+  "avatar": " ",
+  "isAdmin": false,
+  "id": 14
  }
 ]
