@@ -117,7 +117,7 @@
   "apellido": "Rodriguez",
   "email": "gary@zero.com",
   "contraseña": "$2a$10$0YjJrjoAEumGLfeF0lhFOe/0Ao2FlnqUrhtZ9AdoTkg82itpxPDIS",
-  "fecha": "1999-09-26",
+  "fecha": "1998-09-26",
   "avatar": "1643600929521_img_.jpg",
   "isAdmin": true,
   "id": 13
@@ -131,5 +131,15 @@
   "avatar": " ",
   "isAdmin": false,
   "id": 14
+ },
+ {
+  "nombre": "Alexander",
+  "apellido": "Lamas",
+  "email": "alexandernarcisolamas@gmail.com",
+  "contraseña": "$2a$10$LFT19/GG3R8K334wXRKZqOq4Jxl8Al0NJgU7OJmyKcr6DSIMM1y3S",
+  "fecha": "2002-05-13",
+  "avatar": " ",
+  "isAdmin": false,
+  "id": 15
  }
 ]

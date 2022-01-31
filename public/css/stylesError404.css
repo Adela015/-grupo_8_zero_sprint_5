@@ -124,6 +124,14 @@ i.fa-sign-out-alt{
     left: 43%;
 }
 
+/*-----------GATO---------*/
+
+#gato{
+    position: relative;
+    left: 25%;
+    width: 60%;
+}
+
 /*-------------------FOOTER------------------*/
 
 footer{
@@ -463,7 +471,15 @@ div.social-media{
     .fa-exclamation-circle:hover{
         color: black;
     }
+    /*-------------GATO---------*/
+    #gato{
+        position: relative;
+        left: 35%;
+        width: 30%;
+    }
 }
+
+
 
 /*-----------------------------MEDIA QUERIES MOBILE-------------------------*/
 

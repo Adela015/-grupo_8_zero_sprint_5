@@ -58,5 +58,14 @@
   "price": 23005,
   "image": "img-1643419593152.jpg",
   "id": 10
+ },
+ {
+  "name": "Comme ma mère",
+  "artist": "Lyms ft. Kanoe",
+  "genre": "ryb",
+  "description": "Primer álbum",
+  "price": 3200,
+  "image": "img-1643639196697.jpg",
+  "id": 11
  }
 ]
