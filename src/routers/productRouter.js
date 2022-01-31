@@ -5,6 +5,8 @@ const path = require ('path');
 
 
 let productController = require('../controllers/productController');
+const adminMiddleware = require('../middlewares/adminMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -18,7 +20,7 @@ var storage = multer.diskStorage({
 var upload = multer({ storage: storage });
 
 
-router.get('/productCart', productController.productCart) //http://localhost:3000/products/productCart
+router.get('/productCart',authMiddleware,adminMiddleware, productController.productCart) //http://localhost:3000/products/productCart
 
 router.get('/productDetail', productController.productDetail); //http://localhost:3000/products/productDetail
 
@@ -26,19 +28,15 @@ router.get('/productList', productController.productList); //http://localhost:30
 
 router.get('/productList2', productController.productList2);//http://localhost:3000/products/productList2
 
-router.get('/productAdd', productController.productAdd);//http://localhost:3000/products/productAdd
+router.get('/productAdd',authMiddleware,adminMiddleware , productController.productAdd);//http://localhost:3000/products/productAdd
 
-// router.post('/productAdd', productController.createProduct)
-
-router.get('/wishList', productController.wishList);//http://localhost:3000/products/wishList
+router.get('/wishList',authMiddleware,adminMiddleware, productController.wishList);//http://localhost:3000/products/wishList
 
 //Editar productos
 
-router.get('/productEdit/:id', productController.edit);
+router.get('/productEdit/:id',authMiddleware,adminMiddleware, productController.edit);
 
 router.put('/productEdit/:id',upload.single("productImage"), productController.editarAccion);
-
-router.get('/productAdd', productController.productAdd);
 
 router.post('/productAdd',upload.single("image"), productController.create);
 
@@ -50,6 +48,6 @@ router.get('/productList',productController.productList);
 
 router.get('/productList2',productController.productList2);
 
-router.delete('/borrar/:id',productController.delete);
+router.delete('/borrar/:id',authMiddleware,adminMiddleware,productController.delete);
 
 module.exports = router;

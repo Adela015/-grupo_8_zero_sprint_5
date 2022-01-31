@@ -30,23 +30,13 @@
   "id": 3
  },
  {
-  "nombre": "Gary",
-  "apellido": "Gonzalez",
-  "email": "gary@gmail.com",
-  "contraseña": "$2a$10$F/d3sxZaGPFUaH2.zjQp4uGkaUy57gOkwaxO9rpQABfa7FQJLv7oe",
-  "fecha": "2000-09-26",
-  "terminos": "on",
-  "isAdmin": false,
-  "id": 4
- },
- {
   "nombre": "Limberth",
   "apellido": "Entrada",
   "email": "limberth@gmail.com",
   "contraseña": "$2a$10$zRaJviqyMpmlF0oyqbBlgOhnpLbHKonPb56ycObCgZJpqckSn17qq",
   "fecha": "2000-03-18",
   "isAdmin": false,
-  "id": 5
+  "id": 4
  },
  {
   "nombre": "Juan Ignacio",
@@ -55,7 +45,7 @@
   "contraseña": "$2a$10$tMgYgpUz3AenuEh6WiqJ7Ox228w1U2OdS.3swRsVzL45TC0W5yJea",
   "fecha": "1997-03-26",
   "isAdmin": false,
-  "id": 6
+  "id": 5
  },
  {
   "nombre": "Julian",
@@ -64,7 +54,7 @@
   "contraseña": "$2a$10$dyhjzkasJOXewJS08aYlouDhQJ6poDYgQa1PeWJ.5ZZ3ezZ7B82O2",
   "fecha": "2022-01-12",
   "isAdmin": false,
-  "id": 7
+  "id": 6
  },
  {
   "nombre": "Paulina",
@@ -74,7 +64,7 @@
   "fecha": "2000-11-09",
   "promociones": "on",
   "isAdmin": false,
-  "id": 8
+  "id": 7
  },
  {
   "nombre": "Adela",
@@ -83,7 +73,7 @@
   "contraseña": "$2a$10$bbcQ2jpEMHs.BumXaeMh2eVFD9JOp0iyNO8nUZRUEz14jVmqmBx8G",
   "fecha": "2000-01-07",
   "isAdmin": true,
-  "id": 9
+  "id": 8
  },
  {
   "nombre": "Agustín",
@@ -92,7 +82,7 @@
   "contraseña": "$2a$10$a.FvzwM7XWuhIUi.1gEFNOHXgdD0940sUATU1rKhiSceFvSk0uEwa",
   "fecha": "1998-01-06",
   "isAdmin": true,
-  "id": 10
+  "id": 9
  },
  {
   "nombre": "Alexia",
@@ -101,7 +91,7 @@
   "contraseña": "$2a$10$yxtqUI.cDIAIBRMabDxHkuqizwnVrAEIzJGLfwMlLWn2xlOYgOj/u",
   "fecha": "2001-05-05",
   "isAdmin": true,
-  "id": 11
+  "id": 10
  },
  {
   "nombre": "Benjamín ",
@@ -110,7 +100,7 @@
   "contraseña": "$2a$10$VC.NrtGN.0Qw8SNAHORQ.u5eY27NRnfTV1TbmyqV5Ud75RPPGgEbK",
   "fecha": "2001-01-26",
   "isAdmin": true,
-  "id": 12
+  "id": 11
  },
  {
   "nombre": "Paulina",
@@ -119,6 +109,16 @@
   "contraseña": "$2a$10$qxvocUn8TVwa5Vb/.GK2nuuqTfLTLc7Pd.eE/XhhbdDfGM/8aiuye",
   "fecha": "2002-11-09",
   "promociones": "on",
+  "isAdmin": true,
+  "id": 12
+ },
+ {
+  "nombre": "Gary",
+  "apellido": "Rodriguez",
+  "email": "gary@zero.com",
+  "contraseña": "$2a$10$0YjJrjoAEumGLfeF0lhFOe/0Ao2FlnqUrhtZ9AdoTkg82itpxPDIS",
+  "fecha": "1999-09-26",
+  "avatar": "1643600929521_img_.jpg",
   "isAdmin": true,
   "id": 13
  }

@@ -29,7 +29,7 @@
                 <!-- <h1 class="titulo">REGISTRATE</h1> -->
                 <div class="lineaRosa"></div> 
                 <br>
-            <form class="form-register" action="/user/register" method="post">                                 
+            <form class="form-register" action="/user/register" method="post" enctype="multipart/form-data">                                 
                     <div class="espacioRegister">
                         <label for="nombre" class="label-registro">Nombre:</label>
                         <input type="text" 
@@ -86,6 +86,11 @@
                         <input type="date" name="fecha" class="calendario" >
                     </div>
 
+                    <!-- <div class="controlador-form-image">
+                        <label class="input-image-boton" for="image">Agregar Foto de perfil</label>
+                        <input class="input-image" type="file" name="avatar" id="avatar" >
+                    </div>   -->
+                    <br>
                     <div class="espacioChecbox">
                         <input type="checkbox" name="promociones" id="promociones">
                         <label for="promociones">Deseo recibir novedades sobre productos y promociones</label>

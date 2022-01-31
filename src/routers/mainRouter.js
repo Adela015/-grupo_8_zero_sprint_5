@@ -9,6 +9,6 @@ router.get('/about', mainController.about); //http://localhost:3000/about
 
 router.get('/newsLetter', mainController.newsLetter); //http://localhost:3000/newsLetter
 
-router.get('/error404', mainController.error404); //http://localhost:3000/newsLetter
+router.get('/avatar', mainController.avatar); //http://localhost:3000/newsLetter
 
 module.exports = router;

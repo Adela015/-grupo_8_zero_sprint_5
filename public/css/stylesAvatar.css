@@ -10,6 +10,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
 /*--------------------------NAVBAR----------------------*/
 
 nav.nav-bar div.enlace a img.logo{
@@ -35,41 +36,37 @@ nav.nav-bar div.enlace a img.logo{
 }
 .nav-bar-accesos a:hover{
     color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 .fa-bars{
     margin-right: 20px;
     font-size: 28px;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 i.fa-search:hover{
     color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 div.nav-bar-icons a i.fa-shopping-cart:hover{
     color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 div.nav-bar-icons a i.fa-shopping-cart{
     position: relative;
     left: 70%;
     font-size: 35px;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 i.fa-user-circle{
     position: relative;
     right: -40%;
     font-size: 40px;
+    transition: all 200ms
 }
 
 i.fa-angrycreative{
@@ -92,7 +89,7 @@ i.fa-sign-out-alt{
 
 #heart{
     position: relative;
-    left: 10%;
+    left: 0%;
     font-size: 30px;
 }
 
@@ -112,229 +109,56 @@ i.fa-sign-out-alt{
     display: none;
 }
 
-/*-------------------FILTROS---------------*/
+/*-----------USUARIO-----------*/
 
-#filtros{
-    margin-left: 28%;
-}
-
-/*-------------------CARDS------------------*/
-
-div h4.catalogo {
+.usuario{
     font-size: 40px;
-    margin-top: -10%;
     text-align: center;
-    margin-bottom: 5%;
-    border-bottom: 8px solid #e0218a;
+    margin-top: -7%;
+}
+.usuario span{
+    color: #e0218a;
 }
 
-div section article {
-    margin: 10px 0px;
-    box-shadow: 3px 5px 20px #807d7d;
-    border-top: 1px #ccc9c9 solid;
-}
+/*-------IMAGEN POLAROID-------*/
 
-.boton-carrito{
-    margin-bottom: 30px;
-    border:none;
-    font-weight: bold;
-    color: white;
-    background-color: black;
-    padding: 20px;
-}
-
-.boton-carrito:hover{
-    background: #e0218a;
-}
-
-.boton-carrito a{
-    color: white;
-}
-
-article h5.album-title{
-    font-size: 28px;
-    text-align: center;
-    padding: 5px;
-    margin: 0px;
-    padding-bottom: 20px;
-    font-weight: 600;
-}
-
-article h5.album-title2{
-    font-size: 28px;
-    text-align: center;
-    padding: 5px;
-    margin: 0px;
-    padding-bottom: 20px;
-    font-weight: 500;
-}
-
-.album-price{
-    font-size: 32px;
-    font-weight: 500;
+figure{
+    width: 336px;
+    height: 403px;
     position: relative;
-    left: 6%;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-bottom: 20px;
+    background-color: #ffffff;
+    padding: 19px 19px 85px 19px;
+    box-shadow: 1px 3px 20px rgb(110, 97, 97);
+    left: 15%;
+    margin-top: 12%;
+    margin-bottom: 10%;
 }
-
-.boton-carrito{
-    margin-bottom: 30px;
-    border:none;
-    font-weight: bold;
-    color: white;
-    background-color: black;
-    padding: 20px;
+figure img{
+    width: 100%;
 }
-
-.boton-carrito a{
-    color: white;
-}
-
-.ver-mas{
-    align-self: center;
-}
-
-.mas-vendidos{
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-    margin-top: 20px;
-}
-
-
-.mas-vendidos-album{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px 25px;
-}
-
-.mas-vendidos-album-img{
-    width: 75%;
-    height: auto;
-    margin-left: 12%;
-    padding: 30px 0px;
-}
-
-p.album-price i {
-    padding-left: 70px 50px 40px;
-    margin-left: 310px;
-    font-size: 30px;
-
-}
-
-.fa-heart{
-    color: black;
-    cursor: pointer;
-}
-
-.fa-heart:hover{
-    color: red;
-    transition-property: all;
-    transition-duration: 200ms;
-}
-
-.fa-heart:active{
-    color:blue;
-    transition-property: all;
-    transition-duration: 100ms;
-}
-
-
-div section i.fa-chevron-left{
-    font-size: 70px;
-    color: black;
-    margin-top: 310px;
-    transition-property: all;
-    transition-duration: 200ms;
-}
-
-div section i.fa-chevron-left:hover{
-    color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
-}
-
-div section i.fa-chevron-right{
-    font-size: 70px;
-    color: black;
-    margin-top: 310px;
-    transition-property: all;
-    transition-duration: 200ms;
-}
-
-div section i.fa-chevron-right:hover{
-    color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
-}
-
-/*------------------LISTA NúMERICA-----------*/
-
-div.lista-numerica{
+figcaption{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
     text-align: center;
-    font-size: 30px;
-    margin-top: -5%   
+    margin-top: 22px;
 }
-
-div.lista-numerica i.fa-chevron-left{
-    color: black;
-    transition-property: all;
-    transition-duration: 200ms;
+figure:before,
+figure:after{
+    content: "";
+    position: absolute;
+    height: 45px;
+    width: 180px;
+    background-color: #e0218a48;
+    transform: rotate(-40deg);
 }
-
-div.lista-numerica i.fa-chevron-left:hover{
-    color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
+figure:before{
+    top: 3px;
+    left: -55px;
 }
-
-div.lista-numerica i.fa-chevron-right{
-    color: black;
-    transition-property: all;
-    transition-duration: 200ms;
+figure:after{
+    bottom: 3px;
+    right: -60px;
 }
-
-div.lista-numerica i.fa-chevron-right:hover{
-    color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
-}
-
-div.lista-numerica i.fa-chevron-left{
-    color: black;
-    transition-property: all;
-    transition-duration: 200ms;
-}
-
-div.lista-numerica a{
-    color: black;
-    transition-property: all;
-    transition-duration: 200ms;
-}
-
-div.lista-numerica a:hover{
-    color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
-}
-
-/*-----------AGREGAR O EDITAR PRODUCTOS----*/
-
-.addproduct{
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-    padding: 0.5em;
-    background: black;
-    transition: all 200ms
-}
-
-.addproduct:hover{
-    background: #e0218a;
-}
-
 
 /*-------------------FOOTER------------------*/
 
@@ -348,8 +172,6 @@ footer{
     justify-content: center;
     padding: 20px;
     margin-top: 75px;
-    transition-property: all;
-    transition-duration: 200ms;
 }
 
 footer ul{
@@ -365,14 +187,12 @@ footer a{
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 500;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 footer a:hover{
     color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 .footer-links{
@@ -414,34 +234,29 @@ div.social-media{
     display: flex;
     padding: 15px;
     justify-content: center;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 .fa-instagram:hover{
     color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 .fa-facebook:hover{
     color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 .fa-youtube:hover{
     color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
 
 .fa-tiktok:hover{
     color: #e0218a;
-    transition-property: all;
-    transition-duration: 200ms;
+    transition: all 200ms
 }
-/*---------------------MEDIA QUERIES DEKTOP--------------------*/
+/*---------------------MEDIA QUERIES DESKTOP--------------------*/
 
 @media (min-width: 768px) {
     .search-bar{
@@ -486,13 +301,13 @@ div.social-media{
         margin: 0px 15px;
     }
 
-    .fa-address-card{
+    .fa-sign-out-alt{
         color: white;
         font-size: 30px;
         margin: 0px 15px;
     }
 
-    .fa-sign-out-alt{
+    .fa-address-card{
         color: white;
         font-size: 30px;
         margin: 0px 15px;
@@ -619,8 +434,7 @@ div.social-media{
 
     .fa-user-circle:hover{
         color: #e0218a;
-        transition-property: all;
-        transition-duration: 200ms;
+        transition: all 200ms
     }
 
     .fa-angrycreative{
@@ -631,17 +445,6 @@ div.social-media{
     }
 
     .fa-angrycreative:hover{
-        color: #e0218a;
-    }
-
-    .fa-address-card{
-        color: white;
-        font-size: 30px;
-        margin: 0px 15px;
-        transition: all 200ms;
-    }
-
-    .fa-address-card:hover{
         color: #e0218a;
     }
 
@@ -666,50 +469,30 @@ div.social-media{
     .fa-shopping-cart:hover{
         color: #e0218a;
     }
-    /*------------------CARDS---------------*/
-    
-    div section.mas-vendidos{
-        transform: scale(0.5);
-        position: relative;
-        right: 3%;
-        top: 12%;
-        margin-top: -26%;
-        margin-bottom: -5%;
-    }
-    article.mas-vendidos-album p.album-price{
-        font-size: 45px;
-        position: relative;
-        left: 2%;
-    }
-    button.boton-carrito{
-        position: relative;
-        top: -20px;
+
+    .fa-address-card{
+        color: white;
         font-size: 30px;
-        transition-property: all;
-        transition-duration: 150ms;
+        margin: 0px 15px;
+        transition: all 200ms;
     }
-    button.boton-carrito a{
-        font-size: 25px;
+
+    .fa-address-card:hover{
+        color: #e0218a;
     }
-    div section article.mas-vendidos-album p.album-price a i.fa-heart{
-        font-size: 50px;
-        position: relative;
-        top: -50%;
-        right: 5%;
+    /*-----POLAROID------*/
+figure{
+    margin-top: 5%;
+    margin-left: 18%;
+    width: 465px;
+    height: 540px;
     }
-    div h4.catalogo {
-        margin-top: -18%;
-        margin-bottom: 15%;
-        border-bottom: 8px solid #e0218a;
-    }
-    #filtros{
-        margin-bottom: -50%;
-        margin-top: -5%;
-        margin-left: 3%;
-    }
-    div h1{
-        border-bottom: 8px solid #e0218a;
-    }
+    /*-----------USUARIO-----------*/
+    .usuario{
+    margin-top: -15%;
+    font-size: 50px;
+    text-align: center;
+}
 }
 
 /*-----------------------------MEDIA QUERIES MOBILE-------------------------*/
@@ -746,10 +529,7 @@ div.social-media{
     div.lista-numerica{
         margin-top:0.5%;
     }
-    .contenedor-addproduct{
-        text-align: center;
-        margin: 60px 0px;
-        font-size: 30px;
+    div h1{
+        border-bottom: 8px solid #e0218a;
     }
 }
-

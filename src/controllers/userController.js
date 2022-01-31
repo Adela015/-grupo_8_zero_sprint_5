@@ -39,6 +39,7 @@ const userController = {
 
             let usuario = {
                 ...req.body,
+                avatar: req.file?req.file.filename:' ',
                 contraseña: bcrypt.hashSync(req.body.contraseña, 10),
                 isAdmin: String(req.body.email).includes('@zero.com')
             };
