@@ -129,7 +129,7 @@ figure{
     background-color: #ffffff;
     padding: 19px 19px 85px 19px;
     box-shadow: 1px 3px 20px rgb(110, 97, 97);
-    left: 15%;
+    left: 10%;
     margin-top: 12%;
     margin-bottom: 10%;
 }
@@ -481,9 +481,9 @@ div.social-media{
         color: #e0218a;
     }
     /*-----POLAROID------*/
-figure{
+    figure{
     margin-top: 5%;
-    margin-left: 18%;
+    margin-left: 22.5%;
     width: 465px;
     height: 540px;
     }
