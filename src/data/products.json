@@ -6,7 +6,7 @@
   "description": "Primer álbum",
   "price": 3200,
   "image": "img-1643639196697.jpg",
-  "id": 11
+  "id": 1
  },
  {
   "name": "Face",
@@ -15,6 +15,15 @@
   "description": "primer album de Key",
   "price": 15000,
   "image": "img-1643735090643.jpg",
-  "id": 12
+  "id": 2
+ },
+ {
+  "name": "El Último Tour del Mundo",
+  "artist": "Bad Bunny",
+  "genre": "pop",
+  "description": "Album de BB ",
+  "price": 2000,
+  "image": "img-1643843811225.jfif",
+  "id": 3
  }
 ]
