@@ -11,8 +11,8 @@ const mainController = {
     newsLetter: (req,res) => {
         res.render('newsLetter');
     },
-    avatar: (req,res) => {
-        res.render('avatar');
+    profile: (req,res) => {
+        res.render('profile');
     }
 }
 

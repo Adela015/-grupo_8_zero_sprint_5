@@ -14,7 +14,7 @@ body {
 /*--------------------------NAVBAR----------------------*/
 
 nav.nav-bar div.enlace a img.logo{
-    max-width: 30%;
+    max-width: 75%;
     padding-left: 10px;
 }
 
@@ -474,8 +474,8 @@ div.social-media{
     /*-------------GATO---------*/
     #gato{
         position: relative;
-        left: 35%;
-        width: 30%;
+        left: 40%;
+        width: 22%;
     }
 }
 

@@ -141,5 +141,15 @@
   "avatar": " ",
   "isAdmin": false,
   "id": 15
+ },
+ {
+  "nombre": "Gary",
+  "apellido": "Rodriguez",
+  "email": "gary@gmail.com",
+  "contraseña": "$2a$10$wWcmveowy9fJzwgaqn6NJufu4mP8gOpW4xj0lf7zT1eziBi.CqKmO",
+  "fecha": "1998-09-26",
+  "avatar": " ",
+  "isAdmin": false,
+  "id": 16
  }
 ]

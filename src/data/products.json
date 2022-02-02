@@ -1,65 +1,5 @@
 [
  {
-  "id": "1",
-  "name": "I'm Home",
-  "artist": "Minho",
-  "description": "Primer mini albúm de Minho",
-  "price": 20000,
-  "image": "img-1643385494240.jpg"
- },
- {
-  "name": "Planet Her",
-  "artist": "Doja Cat",
-  "description": "Álbum de doja cat",
-  "price": 1600,
-  "category": "CD",
-  "image": "img-1641212330946.jpg",
-  "id": 2
- },
- {
-  "id": "4",
-  "name": "Red Light",
-  "artist": "F(x)",
-  "description": "Album de f(x)",
-  "price": 9000,
-  "image": "img-1641277489958.jpg"
- },
- {
-  "name": "Saturation II",
-  "artist": "Brockhampton",
-  "description": "Segundo álbum de la trilogía SATURATION",
-  "price": 2000,
-  "image": "img-1641272640797.png",
-  "category": "cd",
-  "id": 7
- },
- {
-  "name": "Saturation III",
-  "artist": "Brockhampton",
-  "description": "Tercer álbum de trilogía SATURATION",
-  "price": 2000,
-  "image": "img-1641272860894.jpg",
-  "id": 8
- },
- {
-  "name": "1of1",
-  "artist": "SHINee",
-  "genre": "kpop",
-  "description": "5th Album de SHINee",
-  "price": 27000,
-  "image": "img-1643385574023.jpg",
-  "id": 9
- },
- {
-  "name": "From Now On",
-  "artist": "SHINee",
-  "genre": "kpop",
-  "description": "Album japonés",
-  "price": 23005,
-  "image": "img-1643419593152.jpg",
-  "id": 10
- },
- {
   "name": "Comme ma mère",
   "artist": "Lyms ft. Kanoe",
   "genre": "ryb",
@@ -67,5 +7,14 @@
   "price": 3200,
   "image": "img-1643639196697.jpg",
   "id": 11
+ },
+ {
+  "name": "Face",
+  "artist": "Key",
+  "genre": "kpop",
+  "description": "primer album de Key",
+  "price": 15000,
+  "image": "img-1643735090643.jpg",
+  "id": 12
  }
 ]
