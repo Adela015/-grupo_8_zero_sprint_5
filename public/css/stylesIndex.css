@@ -14,7 +14,7 @@ body {
 /*--------------------------NAVBAR----------------------*/
 
 nav.nav-bar div.enlace a img.logo{
-    max-width: 30%;
+    max-width: 75%;
     padding-left: 10px;
 }
 
@@ -40,6 +40,7 @@ nav.nav-bar div.enlace a img.logo{
 .fa-bars{
     margin-right: 20px;
     font-size: 28px;
+    cursor: pointer;
 }
 
 i.fa-search:hover{
