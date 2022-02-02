@@ -78,7 +78,7 @@
 
     <% for(let producto of productos){ %>
     <section class="mas-vendidos">
-        <article class="mas-vendidos-album">
+        <div class="mas-vendidos-album">
             <a href="/products/productDetail/<%=producto.id%>"><img class="mas-vendidos-album-img" src="/images/albumes/<%=producto.image%>" alt="Álbum - I'm Home"></a>
             <h5 class="album-title"><%=producto.name%></h5>
             <h5 class="album-title2"><%=producto.artist%></h5>
@@ -89,7 +89,7 @@
                     <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
                 </div>
 
-        </article>
+        </div>
     </section>
     <%} %> 
 </div>
