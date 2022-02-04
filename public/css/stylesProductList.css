@@ -128,7 +128,7 @@ div h4.catalogo {
     border-bottom: 8px solid #e0218a;
 }
 
-div section div {
+div section article {
     margin: 10px 0px;
     box-shadow: 3px 5px 20px #807d7d;
     border-top: 1px #ccc9c9 solid;
@@ -151,7 +151,7 @@ div section div {
     color: white;
 }
 
-div h5.album-title{
+article h5.album-title{
     font-size: 28px;
     text-align: center;
     padding: 5px;
@@ -160,7 +160,7 @@ div h5.album-title{
     font-weight: 600;
 }
 
-div h5.album-title2{
+article h5.album-title2{
     font-size: 28px;
     text-align: center;
     padding: 5px;
@@ -197,9 +197,10 @@ div h5.album-title2{
 }
 
 .mas-vendidos{
-    display: grid;
-    padding-inline-start: 40px;
-    grid-template-rows: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-top: 20px;
 }
 
 
@@ -404,7 +405,7 @@ section h3{
 
 }
 
-section div a{
+section article a{
     text-decoration: none;
 }
 
@@ -505,13 +506,6 @@ div.social-media{
     .title-mas-vendidos{
         text-align: center;
     }
-
-    .alinear{
-        margin-left: 130px;
-        display: -ms-inline-grid;
-        flex-wrap: wrap;
-        
-      }
 
     .mas-vendidos{
         display: flex;
@@ -682,7 +676,7 @@ div.social-media{
         margin-top: -26%;
         margin-bottom: -5%;
     }
-    div.mas-vendidos-album p.album-price{
+    article.mas-vendidos-album p.album-price{
         font-size: 45px;
         position: relative;
         left: 2%;
@@ -697,7 +691,7 @@ div.social-media{
     button.boton-carrito a{
         font-size: 25px;
     }
-    div section div.mas-vendidos-album p.album-price a i.fa-heart{
+    div section article.mas-vendidos-album p.album-price a i.fa-heart{
         font-size: 50px;
         position: relative;
         top: -50%;
@@ -722,13 +716,13 @@ div.social-media{
 
 @media screen and (min-width: 450px) {
 
-    div p.album-price a i.fa-heart{
+    article p.album-price a i.fa-heart{
         font-size: 50px;
         position: relative;
         bottom: 50px;
         right: 18%;
     }
-    div h5.album-title{
+    article h5.album-title{
         font-size: 25px;
     }
     button.boton-carrito{
@@ -744,7 +738,7 @@ div.social-media{
         position: relative;
         left: 15%;
     }
-    div p.album-price{
+    article p.album-price{
         font-size: 45px;
         position: relative;
         left: 7.8%;

@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>ZERO | Catálogo</title>
-</head>
+<script async src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
 <body>
     
 <!-----------------------NAV BAR-------------------------->
@@ -78,7 +78,7 @@
 
     <% for(let producto of productos){ %>
     <section class="mas-vendidos">
-        <div class="mas-vendidos-album">
+        <article class="mas-vendidos-album">
             <a href="/products/productDetail/<%=producto.id%>"><img class="mas-vendidos-album-img" src="/images/albumes/<%=producto.image%>" alt="Álbum - I'm Home"></a>
             <h5 class="album-title"><%=producto.name%></h5>
             <h5 class="album-title2"><%=producto.artist%></h5>
@@ -89,7 +89,7 @@
                     <button type="submit" class="boton-carrito"> <a href="/products/productCart"> Agregar al carrito</a></button>
                 </div>
 
-        </div>
+        </article>
     </section>
     <%} %> 
 </div>
@@ -115,5 +115,5 @@
 <%- include ('./partials/footer') %> 
 
 
-</body>
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6d7fdfbba91a08b4',m:'ol_a5q6XUnKIEkaqKlUMb8eHsKVfBEZbAU2R6_8ok1M-1643935502-0-AS0WAosZwGdXQSYKnwyIQdP1TnUxtYyAxzoq2bR/Dyy8IKVEIopybI+58OtyifnFgeW6aGMTYhnobQzIw4SUD3n7voE5ZtWZP4nThhsW6RqRGU+ieiyfmeGNWEZn6+S9GjGzJlD4RIDEAoRai5NnCheJUGZGodDH9xLseeqdhI4RbGz3noxUTa9NCNjgKh7jVIR+nzM3+L5SoYIH3xg/YU4=',s:[0xd6ab2b1993,0xd70795fac7],}})();</script></body>
 </html>
