@@ -488,6 +488,18 @@ div.social-media{
 
 
 
+/*-----------------MEDIA QUERIE EXTRA PARA OCULTAR BUTTONS----------------*/ 
+
+@media (max-width:767px ) {
+    i.fa-angrycreative,
+    i.fa-user-circle,
+    i.fa-address-card,
+    i.fa-sign-out-alt{
+        display: none;
+    }
+}
+
+
 /*---------------------MEDIA QUERIES DESKTOP--------------------*/
 
 @media (min-width: 768px) {
