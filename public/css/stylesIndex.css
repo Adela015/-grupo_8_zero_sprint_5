@@ -63,7 +63,7 @@ i.fa-user-circle{
     font-size: 40px;
 }
 
-i.fa-angrycreative{
+i.fa-plus-circle{
     position: relative;
     right: -40%;
     font-size: 40px;
@@ -491,7 +491,7 @@ div.social-media{
 /*-----------------MEDIA QUERIE EXTRA PARA OCULTAR BUTTONS----------------*/ 
 
 @media (max-width:767px ) {
-    i.fa-angrycreative,
+    i.fa-plus-circle,
     i.fa-user-circle,
     i.fa-address-card,
     i.fa-sign-out-alt{
@@ -539,7 +539,7 @@ div.social-media{
         margin: 0px 15px;
     }
 
-    .fa-angrycreative{
+    .fa-plus-circle{
         color: white;
         font-size: 30px;
         margin: 0px 15px;
@@ -691,14 +691,14 @@ div.social-media{
         color: #e0218a;
     }
 
-    .fa-angrycreative{
+    .fa-plus-circle{
         color: white;
         font-size: 30px;
         margin: 0px 15px;
         transition: all 200ms;
     }
 
-    .fa-angrycreative:hover{
+    .fa-plus-circle:hover{
         color: #e0218a;
     }
 
