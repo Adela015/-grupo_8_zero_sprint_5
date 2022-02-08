@@ -153,6 +153,7 @@
   "id": 16
  },
  {
+<<<<<<< HEAD
   "nombre": "Gary",
   "apellido": "Rodriguez",
   "email": "garyrod@gmail.com",
@@ -161,5 +162,27 @@
   "avatar": "1643840514085_img_.jpg",
   "isAdmin": false,
   "id": 17
+=======
+  "nombre": "Benjamín",
+  "apellido": "Acuña",
+  "email": "benja@gmail.com",
+  "contraseña": "$2a$10$FPCO/0W10dD.yVeBhoJrWOCBCl40Mkqf25UqV8RgaY/jz9X3oS5ce",
+  "fecha": "2002-01-26",
+  "terminos": "on",
+  "avatar": "1643841677063_img_.jpg",
+  "isAdmin": false,
+  "id": 17
+ },
+ {
+  "nombre": "Benjamín",
+  "apellido": "Acuña",
+  "email": "benja@zero.com",
+  "contraseña": "$2a$10$9ZiCPLOMY5nU9DapOXjXweCYA3Ef1vLOTZdodRFga6jpj.6Zzlj6i",
+  "fecha": "2002-01-26",
+  "terminos": "on",
+  "avatar": "1643841834049_img_.jpg",
+  "isAdmin": true,
+  "id": 18
+>>>>>>> 5b7d9e97bea58c1950c19d9a5d3acbcb0ea0e444
  }
 ]

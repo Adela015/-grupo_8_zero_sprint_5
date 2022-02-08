@@ -507,6 +507,12 @@ div.social-media{
         text-align: center;
     }
 
+    section .mas-vendidos{
+        display: flex;
+        align-items: center;
+    }
+
+
     .mas-vendidos{
         display: flex;
         flex-direction: row;
