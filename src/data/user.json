@@ -151,5 +151,15 @@
   "avatar": " ",
   "isAdmin": false,
   "id": 16
+ },
+ {
+  "nombre": "Gary",
+  "apellido": "Rodriguez",
+  "email": "garyrod@gmail.com",
+  "contraseña": "$2a$10$Tn9K9LlYx/hG8ZwIu3/KMuG/W8cLyGBzStI9ZCk0gMi90Q91DIr86",
+  "fecha": "2022-02-08",
+  "avatar": "1643840514085_img_.jpg",
+  "isAdmin": false,
+  "id": 17
  }
 ]
