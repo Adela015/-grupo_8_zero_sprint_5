@@ -93,109 +93,103 @@ div h1{
 
 /*-----------------CAJA FORMULARIO----------------*/
 
-.container{
-    margin: 20px;
-}
-
-.row{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card{
-    background: #ffffff;
-    position: relative;
-    flex: 1;
-    max-width: 768px;
-    height: 850px;
-    margin: 10px;
-    border-radius: 5px;
-    box-shadow: 5px 5px 25px grey;
-}
-
-/*----------------FORMULARIO-----------------*/
-
-section form{
-    width: 45%;
-    margin: 0 auto;
-    color: black;
-    margin-top: 10%;
-}
-
-section form fieldset{
-    padding: 0px;
-    border: none;
-}
-
-section form fieldset div{
-    margin: 7px;
-}
-
-label{
-    line-height: 1.3;
-    margin-bottom: 8px;
-    text-align: left;
-    margin-left: 10px;
-}
-
-section form fieldset div .field{
-    border-radius: 5px;
-    border: solid 1px #ccc;
-    width: 100%;
-    height: 33px;
-    margin: 10px;
-}
-
-.calendario{
-    height: 33px;
-    border-radius: 5px;
-    border: solid 1px #ccc;
-    width: 30%;
-    margin: 10px;
+.container {
+    margin-top: 50px;
+    background-color: white;
+    padding: 30px 10px;
+    box-shadow: 3px 5px 20px #807d7d;
 }
 
 .espacioRegister{
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+form div label{
     margin-bottom: 15px;
-    margin-left: 0px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.input-style{
+    height: 40px;
+    border: #cccccc solid 2px;
+    border-radius: 30px;
+    padding: 0px 15px;
+}
+
+.controlador-form-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-image{
+    display: none;
+}
+
+.input-image-boton{
+    margin-top: 30px;
+    color: white;
+    background-color: black;
+    padding: 20px 20px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 200ms;
+}
+
+.input-image-boton:hover{
+    background-color: #e0218a;
 }
 
 .espacioCheckbox{
-    margin-bottom: 30px;
-}
-
-#boxButton{
+    margin: 20px 20px;
     text-align: center;
-    margin-top: 20px;
-    padding: 15px 10px;
+    
 }
 
-button.boton1 {
-    cursor: pointer;
-    font-size: 0.8rem;
-    transition: 200ms all;
-    font-weight: 800;
-    color:  #ffffff;
-    background: black;
-    padding: 15px;
+.espacioCheckbox input{
+    padding: 20px 0px
+}
+
+.boton1{
+    margin-top: 30px;
+    color: white;
+    background-color: black;
+    padding: 20px 20px;
     border: none;
-    margin-top: 110%;
+    font-weight: 700;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 200ms;
 }
 
-button.boton1:hover{
-    background: #e0218a;
-    color: #ffffff
+.boton1:hover{
+    background-color: #e0218a;
 }
 
-.irLogin{
-    text-align: center;
-    color: #e0218a;
-}
 
-.error {
-    color: #e0218a;
+/*-----------------MEDIA QUERIES DESKTOP------------------*/
+
+@media (min-width: 450px) {
+    
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 60%;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .input-style,
+    .input-style-category,
+    .text-area{
+        max-width: 100%;
+        
+    }
 }
 
 /*-------------------FOOTER------------------*/
@@ -489,6 +483,18 @@ div.social-media{
     }
     .irLogin{
         margin-top: 10px;
+    }
+}
+
+
+/*-----------------MEDIA QUERIE EXTRA PARA OCULTAR BUTTONS----------------*/ 
+
+@media (max-width:767px ) {
+    i.fa-plus-circle,
+    i.fa-user-circle,
+    i.fa-address-card,
+    i.fa-sign-out-alt{
+        display: none;
     }
 }
 
