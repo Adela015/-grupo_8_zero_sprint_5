@@ -153,16 +153,6 @@
   "id": 16
  },
  {
-<<<<<<< HEAD
-  "nombre": "Gary",
-  "apellido": "Rodriguez",
-  "email": "garyrod@gmail.com",
-  "contraseña": "$2a$10$Tn9K9LlYx/hG8ZwIu3/KMuG/W8cLyGBzStI9ZCk0gMi90Q91DIr86",
-  "fecha": "2022-02-08",
-  "avatar": "1643840514085_img_.jpg",
-  "isAdmin": false,
-  "id": 17
-=======
   "nombre": "Benjamín",
   "apellido": "Acuña",
   "email": "benja@gmail.com",
@@ -183,6 +173,5 @@
   "avatar": "1643841834049_img_.jpg",
   "isAdmin": true,
   "id": 18
->>>>>>> 5b7d9e97bea58c1950c19d9a5d3acbcb0ea0e444
  }
 ]
